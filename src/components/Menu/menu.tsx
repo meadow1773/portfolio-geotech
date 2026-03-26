@@ -5,7 +5,7 @@ export interface MenuItem {
     key: string,
     label: string,
     url?: string,
-    hasSub?: boolean,
+    isSubMenu?: boolean,
     subMenu?: MenuItem[]
 }
 
@@ -14,22 +14,35 @@ interface MenuProps {
 }
 
 export default function Menu({ items }: MenuProps) {
+    /**
+     * State para gerenciar a visibilidade dos submenus
+     */
     const [showMenu, setShowMenu] = useState<{ [key: string]: boolean }>({})
 
+    /**
+     * Efeito para inicializar o estado de visibilidade dos submenus
+     */
     useEffect(() => {
         items.forEach(item => {
-            setShowMenu({
-                [item.key]: true
-            })
+            setShowMenu(prevState => ({
+                ...prevState,
+                [item.key]: item.isSubMenu ? true : false
+            }))
         })
     }, [items])
 
-    // const onClick = (key: string) => {
-    //     setShowMenu((prevShowMenu) => ({
-    //         ...prevShowMenu,
-    //         [key]: !prevShowMenu[key],
-    //     }))
-    // }
+    /**
+     * Função para lidar com o evento de mouse over em um item do menu
+     * @param item Item do menu que disparou o evento
+     */
+    const onMouseOver = (item: MenuItem) => {
+        if (item.subMenu) {
+            setShowMenu(prevState => ({
+                ...prevState,
+                [item.key]: !prevState[item.key]
+            }))
+        }
+    }
 
     return (
         <ul>
@@ -37,9 +50,10 @@ export default function Menu({ items }: MenuProps) {
                 <li
                     key={index}
                     className={item.key}
-                    style={{ display: showMenu[item.key] ? 'block' : 'none' }}>
+                    onMouseOver={() => onMouseOver(item)}
+                >
                     <a href={item.url}>{item.label}</a>
-                    {item.hasSub && <Menu items={item.subMenu!}></Menu>}
+                    {item.subMenu && showMenu[item.key] && <Menu items={item.subMenu}></Menu>}
                 </li>
             ))}
         </ul>
