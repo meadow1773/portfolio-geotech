@@ -1,0 +1,21 @@
+#sobre {
+    display: flex;
+    padding: 6rem 0;
+    background-color: #0b0f10;
+    align-items: center;
+    position: relative;
+
+    .container {
+        display: grid;
+        max-width: 1280px;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        gap: 4rem;
+        padding: 0 1.5rem;
+
+        .text p {
+            text-align: justify;
+        }
+    }
+}
