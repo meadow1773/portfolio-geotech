@@ -52,7 +52,7 @@ export default function Menu({ items }: MenuProps) {
                     className={item.key}
                     onMouseOver={() => onMouseOver(item)}
                 >
-                    <a href={item.url}>{item.label}</a>
+                    <a href={item.url} aria-label={item.label}>{item.label}</a>
                     {item.subMenu && showMenu[item.key] && <Menu items={item.subMenu}></Menu>}
                 </li>
             ))}

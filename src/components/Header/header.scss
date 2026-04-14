@@ -21,29 +21,10 @@ header {
         .logo {
             font-weight: 600;
             letter-spacing: 0.05em;
-            color: #fff;
-            cursor: default;
-        }
 
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-
-            li {
-                color: #9ca3af;
-                text-transform: uppercase;
-
-                a {
-                    text-decoration: none;
-                    color: inherit;
-
-                    &:hover {
-                        color: #31e39a;
-                    }
-                }
+            a {
+                color: #fff;
+                text-decoration: none;
             }
         }
 
@@ -58,6 +39,7 @@ header {
             padding: 0.5rem 1.25rem;
             cursor: pointer;
             box-shadow: #2bd68f67 1px 1px 20px;
+            transition: box-shadow 0.2s ease;
 
             &:hover {
                 background-color: #2bd68f;

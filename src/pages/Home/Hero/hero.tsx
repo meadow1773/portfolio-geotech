@@ -35,6 +35,7 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-            <img className="leaf" src="/src/images/svg/leaf.svg" alt="" />        </div>
+            <img className="leaf" src="/src/images/svg/leaf.svg" alt="" />
+        </div>
     </section>
 }

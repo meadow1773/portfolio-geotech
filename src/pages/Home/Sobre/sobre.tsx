@@ -15,7 +15,9 @@ export default function Sobre() {
             <div>
                 <img src="" alt="" />
                 <img src="" alt="" />
-                <blockquote> Acredito que compreender o território – seus fluxos, usos e vulnerabilidades – é essencial para construir cidades mais inteligentes e sustentáveis. Meu trabalho é transformar essa leitura espacial em interfaces, mapas e aplicações que dialoguem com quem toma decisão no dia a dia. </blockquote>
+                <blockquote>
+                    Acredito que compreender o território – seus fluxos, usos e vulnerabilidades – é essencial para construir cidades mais inteligentes e sustentáveis. Meu trabalho é transformar essa leitura espacial em interfaces, mapas e aplicações que dialoguem com quem toma decisão no dia a dia.
+                </blockquote>
             </div>
         </div>
     </section>

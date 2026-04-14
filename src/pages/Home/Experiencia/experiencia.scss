@@ -1,0 +1,83 @@
+@use '/src/styles/global' as *;
+
+#xp {
+    padding: 6rem 0;
+    background-color: #000;
+    position: relative;
+
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .xp-items {
+        position: relative;
+        border-left: 3px $dark-green solid;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+
+        .xp-item {
+            padding-left: 3rem;
+
+            .ponto {
+                position: absolute;
+                left: -10px;
+                display: block;
+                padding: 8px;
+                border: 1px solid $main;
+                background-color: $dark-green;
+                border-radius: 100%;
+            }
+
+            &:first-child .ponto {
+                background-color: $main;
+                box-shadow: $main 0 0 20px;
+                animation: glowBlink 2.4s ease-in-out infinite;
+            }
+
+            .tempo {
+                font-family: $fonte-mono;
+            }
+
+            &:first-child .tempo {
+                color: $main;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+                margin: 0.25rem 0 0;
+            }
+
+            .cargo {
+                color: $main;
+            }
+
+            p {
+                text-align: justify;
+                color: $cinza1;
+            }
+        }
+    }
+}
+
+@keyframes glowBlink {
+    0% {
+        box-shadow: 0 0 16px rgba(53, 242, 164, 0.45);
+    }
+
+    50% {
+        box-shadow: 0 0 24px rgba(53, 242, 164, 0.9);
+    }
+
+    100% {
+        box-shadow: 0 0 16px rgba(53, 242, 164, 0.45);
+    }
+}

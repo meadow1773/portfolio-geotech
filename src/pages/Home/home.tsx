@@ -1,9 +1,10 @@
-import Experiencia from "../../components/Experiencia/experiencia"
+import Contato from "./Contato/ contato"
+import Experiencia from "./Experiencia/experiencia"
+import Hero from "./Hero/hero"
+import Skills from "./Skills/skills"
+import Sobre from "./Sobre/sobre"
 import Footer from "../../components/Footer/footer"
 import Header from "../../components/Header/header"
-import Hero from "../../components/Hero/hero"
-import Skills from "../../components/Skills/skills"
-import Sobre from "../../components/Sobre/sobre"
 import './home.scss'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
                 <Sobre></Sobre>
                 <Experiencia></Experiencia>
                 <Skills></Skills>
+                <Contato></Contato>
             </main>
             <Footer></Footer>
         </>

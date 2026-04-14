@@ -1,0 +1,36 @@
+@use '/src/styles/global' as *;
+
+.item {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 0.7rem;
+
+    .level {
+        position: absolute;
+        align-self: flex-end;
+        color: $cinza1;
+    }
+
+    .progress {
+        width: 100%;
+        height: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: $cinza2;
+
+        .filler {
+            display: block;
+            background-image: linear-gradient(to right, #35f2a6, #3ae8c8);
+            background-clip: border-box;
+            -webkit-text-fill-color: transparent;
+            width: 0;
+            height: 100%;
+            transition: width 1s ease;
+
+            &.visivel {
+                width: var(--target-width);
+            }
+        }
+    }
+}

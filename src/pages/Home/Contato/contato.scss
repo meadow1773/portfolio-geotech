@@ -1,0 +1,53 @@
+@use '/src/styles/global' as *;
+
+#contato {
+    background-color: $dark;
+    padding: 6rem 0;
+
+    .container {
+        max-width: 1280px;
+        min-height: 380px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        p {
+            color: $cinza1;
+        }
+
+        .botao {
+            display: inline-block;
+            width: max-content;
+            border: 1px $cinza2 solid;
+            background-color: $dark;
+            padding: 1rem;
+            margin: 1rem 5px;
+            border-radius: 0.75rem;
+            transition: all 0.2s ease;
+            color: $branco;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #163628;
+                border-color: $dark-green;
+            }
+
+            .icon {
+                color: $main;
+                padding: 0 0.25rem;
+            }
+        }
+
+        .globe {
+            width: 380px;
+            position: absolute;
+            right: 0;
+            bottom: -1.5rem;
+        }
+    }
+}
