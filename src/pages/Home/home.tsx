@@ -7,11 +7,11 @@ import Footer from "../../components/Footer/footer"
 import Header from "../../components/Header/header"
 import './home.scss'
 
-export default function Home() {
+export default function Home({ titulo }: { titulo: string }) {
 
     return (
         <>
-            <Header></Header>
+            <Header titulo={titulo}></Header>
             <main>
                 <div className="green-glow"></div>
                 <Hero></Hero>

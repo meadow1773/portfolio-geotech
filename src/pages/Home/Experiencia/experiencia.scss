@@ -4,6 +4,7 @@
     padding: 6rem 0;
     background-color: #000;
     position: relative;
+    background-image: url('/images/curvas.webp');
 
     .container {
         max-width: 1280px;
@@ -39,7 +40,7 @@
             &:first-child .ponto {
                 background-color: $main;
                 box-shadow: $main 0 0 20px;
-                animation: glowBlink 2.4s ease-in-out infinite;
+                animation: glowBlink 1.5s ease-in-out infinite;
             }
 
             .tempo {
@@ -74,7 +75,7 @@
     }
 
     50% {
-        box-shadow: 0 0 24px rgba(53, 242, 164, 0.9);
+        box-shadow: 0 0 32px rgba(82, 242, 175, 0.9);
     }
 
     100% {

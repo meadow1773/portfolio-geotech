@@ -39,7 +39,7 @@ export default function LevelBar(props: LevelBarProps) {
     }, [temAnimacao])
 
     return (
-        <div className="item" key={props.ind}>
+        <div className="bar-item" key={props.ind}>
             <div className="nome">
                 {props.nome}
             </div>

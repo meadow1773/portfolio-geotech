@@ -1,10 +1,10 @@
 @use '/src/styles/global' as *;
 
-.item {
+.bar-item {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
     gap: 0.7rem;
+    padding: 0.2rem 0;
 
     .level {
         position: absolute;
@@ -21,6 +21,7 @@
 
         .filler {
             display: block;
+            border-radius: 10px;
             background-image: linear-gradient(to right, #35f2a6, #3ae8c8);
             background-clip: border-box;
             -webkit-text-fill-color: transparent;

@@ -17,8 +17,9 @@ export default function Skills() {
      */
     const devList: SkillItem[] = [
         { nome: 'Angular', level: 95 },
-        { nome: 'Java Spring', level: 65 },
-        { nome: 'SQL (Postgres e MySQL)', level: 70 },
+        { nome: 'React', level: 75 },
+        { nome: 'Java (Spring)', level: 65 },
+        { nome: 'SQL', level: 80 },
         { nome: 'PHP', level: 50 },
     ]
 
@@ -35,9 +36,10 @@ export default function Skills() {
      * Lista de Skills de Geo
      */
     const geoList: SkillItem[] = [
-        { nome: 'QGIS e ArcGIS', level: 95 },
-        { nome: 'PostGIS', level: 80 },
-        { nome: 'Geoserver', level: 85 },
+        { nome: 'QGIS', level: 95 },
+        { nome: 'ArcGIS', level: 80 },
+        { nome: 'PostGIS', level: 90 },
+        { nome: 'Geoserver', level: 90 },
     ]
 
     /**
@@ -49,20 +51,21 @@ export default function Skills() {
         { nome: 'Geotecnologias', skills: geoList },
     ]
 
-    return <section id="skills">
-        <div className="container">
-            <h1>Habilidades Técnicas</h1>
-            <div className="skill-items">
-                {skillList.map((item, index) => (
-                    <div className="item" key={index}>
-                        <h2>{item.nome}</h2>
-                        {item.skills.map((skill, ind) => (
-                            <LevelBar ind={ind} nome={skill.nome} level={skill.level} />
-                        ))}
-                    </div>
-                ))}
+    return (
+        <section id="skills">
+            <div className="container">
+                <h1>Habilidades Técnicas</h1>
+                <div className="skill-items">
+                    {skillList.map((item, index) => (
+                        <div className="item" key={index}>
+                            <h2>{item.nome}</h2>
+                            {item.skills.map((skill, ind) => (
+                                <LevelBar key={ind} ind={ind} nome={skill.nome} level={skill.level} />
+                            ))}
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
-
-    </section>
+        </section>
+    )
 }

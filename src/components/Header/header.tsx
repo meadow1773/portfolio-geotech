@@ -1,7 +1,7 @@
 import Menu, { type MenuItem } from "../Menu/menu"
 import './header.scss'
 
-export default function Header() {
+export default function Header({ titulo }: { titulo: string }) {
     /**
      * Itens do menu principal
      */
@@ -16,13 +16,15 @@ export default function Header() {
         <header>
             <nav>
                 <span className="logo">
-                    <a href="/">
-                        VHOP | GEO.TECH
+                    <a href="#">
+                        {titulo}
                     </a>
                 </span>
-                <Menu items={menuItems}></Menu>
+                <Menu items={menuItems} menuKey="menu-principal"></Menu>
                 <button className="cv">
-                    Baixar CV
+                    <a href="https://drive.google.com/file/d/1ttJQtvIrP5ZRyj6YTNl1QPpjLWZu0att/view?usp=sharing" target="_blank">
+                        Baixar CV
+                    </a>
                 </button>
             </nav>
         </header>

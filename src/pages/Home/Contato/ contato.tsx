@@ -11,22 +11,18 @@ export default function Contato() {
                 <div className="contatos">
                     <a href="mailto:victorhugo.oliveira16@gmail.com" target="_blank">
                         <span className="botao">
-                            <span className="material-symbols-outlined icon">
-                                mail
-                            </span>
+                            <i className="bi bi-envelope icon"></i>
                             victorhugo.oliveira16@gmail.com
                         </span>
                     </a>
                     <a href="http://wa.me/+5543999577877" target="_blank">
                         <span className="botao">
-                            <span className="material-symbols-outlined icon">
-                                phone_enabled
-                            </span>
+                            <i className="bi bi-telephone icon"></i>
                             +55 43 99957-7877
                         </span>
                     </a>
                 </div>
-                <img className="globe" src="/src/images/svg/globe.svg" alt="" />
+                <img className="globe" src="/images/globe.svg" alt="" />
             </div>
         </section>
     )

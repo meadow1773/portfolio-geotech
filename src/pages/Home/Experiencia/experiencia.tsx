@@ -27,28 +27,30 @@ export default function Experiencia() {
         },
     ]
 
-    return <section id="xp">
-        <div className="container">
-            <h1>Trajetória Profissional</h1>
-            <div className="xp-items">
-                {items
-                    .sort((xp1, xp2) => {
-                        if (!xp1.anoFim && !xp2.anoFim) return 0
-                        if (!xp1.anoFim) return -1
-                        if (!xp2.anoFim) return 1
+    return (
+        <section id="xp">
+            <div className="container">
+                <h1>Trajetória Profissional</h1>
+                <div className="xp-items">
+                    {items
+                        .sort((xp1, xp2) => {
+                            if (!xp1.anoFim && !xp2.anoFim) return 0
+                            if (!xp1.anoFim) return -1
+                            if (!xp2.anoFim) return 1
 
-                        return xp2.anoFim - xp1.anoFim
-                    })
-                    .map((xp, index) => (
-                        <div className="xp-item" key={index}>
-                            <div className="ponto"></div>
-                            <span className="tempo">{xp.anoInicio} - {xp.anoFim ?? 'PRESENTE'}</span>
-                            <h3 className="nome">{xp.nome}</h3>
-                            <span className="cargo">{xp.cargo}</span>
-                            <p>{xp.descricao}</p>
-                        </div>
-                    ))}
+                            return xp2.anoFim - xp1.anoFim
+                        })
+                        .map((xp, index) => (
+                            <div className="xp-item" key={index}>
+                                <div className="ponto"></div>
+                                <span className="tempo">{xp.anoInicio} - {xp.anoFim ?? 'PRESENTE'}</span>
+                                <h3 className="nome">{xp.nome}</h3>
+                                <span className="cargo">{xp.cargo}</span>
+                                <p>{xp.descricao}</p>
+                            </div>
+                        ))}
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    )
 }

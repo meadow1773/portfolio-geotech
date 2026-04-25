@@ -10,10 +10,11 @@ export interface MenuItem {
 }
 
 interface MenuProps {
+    menuKey: string,
     items: MenuItem[]
 }
 
-export default function Menu({ items }: MenuProps) {
+export default function Menu({ items, menuKey }: MenuProps) {
     /**
      * State para gerenciar a visibilidade dos submenus
      */
@@ -45,7 +46,7 @@ export default function Menu({ items }: MenuProps) {
     }
 
     return (
-        <ul>
+        <ul className="menu" key={menuKey}>
             {items.map((item, index) => (
                 <li
                     key={index}
@@ -53,7 +54,7 @@ export default function Menu({ items }: MenuProps) {
                     onMouseOver={() => onMouseOver(item)}
                 >
                     <a href={item.url} aria-label={item.label}>{item.label}</a>
-                    {item.subMenu && showMenu[item.key] && <Menu items={item.subMenu}></Menu>}
+                    {item.subMenu && showMenu[item.key] && <Menu items={item.subMenu} menuKey={`submenu ${item.key}`}></Menu>}
                 </li>
             ))}
         </ul>

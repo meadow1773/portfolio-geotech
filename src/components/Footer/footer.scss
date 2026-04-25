@@ -1,4 +1,16 @@
+@use '/src/styles/global' as *;
+
 footer {
-    background-color: #1f1f1f;
-    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $cinza1;
+
+    span {
+        font-family: $fonte-mono;
+        line-height: 1.5rem;
+        padding-top: 1rem;
+        border-top: solid 1px $cinza2;
+    }
 }

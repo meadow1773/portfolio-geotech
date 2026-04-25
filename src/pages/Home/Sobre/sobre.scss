@@ -1,3 +1,5 @@
+@use '/src/styles/global' as *;
+
 #sobre {
     display: flex;
     padding: 6rem 0;
@@ -11,11 +13,55 @@
         margin: 0 auto;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         align-items: center;
-        gap: 4rem;
         padding: 0 1.5rem;
+
+        h1 {
+            text-align: left;
+            grid-row: 1;
+        }
+
+        h2 {
+            font-family: $fonte-mono;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 2rem;
+        }
 
         .text p {
             text-align: justify;
+            line-height: 1.7rem;
+
+            b {
+                color: $main;
+            }
+        }
+
+        .fotos {
+            grid-row: 1/3;
+            padding-left: 2rem;
+            display: flex;
+            gap: 1rem;
+
+            span {
+                background-color: #0e53354d;
+                border: 1px solid #35f2a433;
+                border-radius: 60px;
+                height: 450px;
+                width: 20rem;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    object-fit: cover;
+                    opacity: 0.8;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
         }
     }
 }
