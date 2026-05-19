@@ -20,7 +20,8 @@ export default function Skills() {
         { nome: 'React', level: 75 },
         { nome: 'Java (Spring)', level: 65 },
         { nome: 'SQL', level: 80 },
-        { nome: 'PHP', level: 50 },
+        { nome: 'PHP', level: 40 },
+        { nome: 'Git', level: 60 },
     ]
 
     /**

@@ -4,6 +4,7 @@ import './menu.scss'
 export interface MenuItem {
     key: string,
     label: string,
+    icone: string,
     url?: string,
     isSubMenu?: boolean,
     subMenu?: MenuItem[]
@@ -53,7 +54,10 @@ export default function Menu({ items, menuKey }: MenuProps) {
                     className={item.key}
                     onMouseOver={() => onMouseOver(item)}
                 >
-                    <a href={item.url} aria-label={item.label}>{item.label}</a>
+                    <a href={item.url} aria-label={item.label}>
+                        <i className={`bi bi-${item.icone}`}></i>
+                        <span>{item.label}</span>
+                    </a>
                     {item.subMenu && showMenu[item.key] && <Menu items={item.subMenu} menuKey={`submenu ${item.key}`}></Menu>}
                 </li>
             ))}

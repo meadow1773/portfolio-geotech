@@ -10,7 +10,7 @@
     z-index: 0;
 }
 
-#home {
+#hero {
     display: flex;
     padding-top: 5rem;
     min-height: 90vh;
@@ -150,6 +150,28 @@
             position: absolute;
             right: 0;
             bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #hero .container {
+        padding-top: 2rem !important;
+        grid-template-columns: 1fr !important;
+
+        .pre-text {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.5rem !important;
+        }
+
+        .foto {
+            gap: 1rem;
         }
     }
 }

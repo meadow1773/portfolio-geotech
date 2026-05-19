@@ -52,6 +52,8 @@
                 overflow: hidden;
 
                 img {
+                    height: 100%;
+                    width: 100%;
                     object-fit: cover;
                     opacity: 0.8;
                     transition: all 0.2s ease;
@@ -62,6 +64,24 @@
                 }
             }
 
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #sobre .container {
+        display: flex !important;
+        flex-direction: column;
+
+        .fotos {
+            padding: 0 !important;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            span:has(img) {
+                width: 100% !important;
+            }
         }
     }
 }

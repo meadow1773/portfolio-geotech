@@ -2,10 +2,13 @@
 
 ul.menu {
     margin: 0;
-    padding: 0;
+    padding: 0 1rem;
     list-style: none;
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 30rem;
+    user-select: none;
 
     li {
         color: $cinza1;
@@ -15,6 +18,14 @@ ul.menu {
             text-decoration: none;
             color: inherit;
             transition: color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            i {
+                display: none;
+                font-size: 1.5rem;
+            }
 
             &:hover,
             &:focus {
@@ -24,15 +35,36 @@ ul.menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     ul.menu {
         position: fixed;
-        bottom: 0;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #121212b3;
+        backdrop-filter: blur(10px);
+        border: 1px solid $dark-green;
+        border-radius: 1.5rem;
+        justify-content: space-around;
         z-index: 999;
+        width: 90%;
+        height: 4rem;
+        max-width: 24rem;
+        align-items: center;
 
         li {
-            color: $branco;
+            color: $cinza1;
             font-weight: 600;
+
+            a {
+                i {
+                    display: block;
+                }
+
+                span {
+                    display: none;
+                }
+            }
         }
     }
 }

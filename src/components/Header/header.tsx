@@ -6,12 +6,13 @@ export default function Header({ titulo }: { titulo: string }) {
      * Itens do menu principal
      */
     const menuItems: MenuItem[] = [
-        { key: 'inicio', label: 'Início', url: '/' },
-        { key: 'sobre', label: 'Sobre', url: '#sobre' },
-        { key: 'xp', label: 'Experiência', url: '#xp' },
-        { key: 'skills', label: 'Skills', url: '#skills' },
-        { key: 'contato', label: 'Contato', url: '#contato' },
+        { key: 'inicio', label: 'Início', icone: 'house', url: '#' },
+        { key: 'sobre', label: 'Sobre', icone: 'person', url: '#sobre' },
+        { key: 'xp', label: 'Experiência', icone: 'suitcase-lg', url: '#xp' },
+        { key: 'skills', label: 'Skills', icone: 'layers', url: '#skills' },
+        { key: 'contato', label: 'Contato', icone: 'envelope', url: '#contato' },
     ]
+
     return (
         <header>
             <nav>
@@ -22,7 +23,7 @@ export default function Header({ titulo }: { titulo: string }) {
                 </span>
                 <Menu items={menuItems} menuKey="menu-principal"></Menu>
                 <button className="cv">
-                    <a href="https://drive.google.com/file/d/1ttJQtvIrP5ZRyj6YTNl1QPpjLWZu0att/view?usp=sharing" target="_blank">
+                    <a href="https://drive.google.com/file/d/16kvEzUNmbCo5psZucFMctOIcgsWA2_AY/view?usp=sharing" target="_blank">
                         Baixar CV
                     </a>
                 </button>

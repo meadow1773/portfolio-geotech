@@ -23,6 +23,8 @@ header {
             font-weight: 600;
             letter-spacing: 0.05em;
             text-transform: uppercase;
+            white-space: nowrap;
+            user-select: none;
 
             a {
                 color: #fff;
@@ -31,11 +33,7 @@ header {
         }
 
         button {
-            font-family: inherit;
-            font-size: 1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            background-color: #31e39a;
+            background-color: $main;
             border: none;
             border-radius: 3rem;
             padding: 0.5rem 1.25rem;
@@ -44,21 +42,25 @@ header {
             transition: box-shadow 0.2s ease;
 
             a {
+                font-family: inherit;
+                font-size: 1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                white-space: nowrap;
                 color: #000;
                 text-decoration: none;
             }
 
             &:hover {
-                background-color: #2bd68f;
+                background-color: $secundary;
                 box-shadow: #2bd68f97 1px 1px 24px;
             }
         }
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     header {
-        position: static;
         backdrop-filter: none;
     }
 

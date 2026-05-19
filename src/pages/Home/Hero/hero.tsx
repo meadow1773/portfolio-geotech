@@ -1,8 +1,26 @@
+// import { useEffect, useState } from 'react'
 import './hero.scss'
 
 export default function Hero() {
+    // const [texto, setTexto] = useState('')
+    // const velocidadeTexto = 100
+
+    // useEffect(() => {
+    //     let index = 0
+    //     setTexto('')
+
+    //     const idIntervalo = setInterval(() => {
+    //         setTexto((prev) => prev + texto.charAt(index))
+    //         index++
+
+    //         if (index >= texto.length) {
+    //             clearInterval(idIntervalo)
+    //         }
+    //     }, velocidadeTexto)
+    // }, [texto])
+
     return (
-        <section id="home">
+        <section id="hero">
             <div className="map-grid"></div>
             <div className="container">
                 <div className="hero-text">

@@ -22,6 +22,7 @@
 
         .botao {
             display: inline-block;
+            cursor: pointer;
             width: max-content;
             border: 1px $cinza2 solid;
             background-color: $dark;
@@ -29,8 +30,11 @@
             margin: 1rem 5px;
             border-radius: 0.75rem;
             transition: all 0.2s ease;
-            color: $branco;
-            text-decoration: none;
+
+            a {
+                color: $branco;
+                text-decoration: none;
+            }
 
             &:hover {
                 background-color: #163628;
