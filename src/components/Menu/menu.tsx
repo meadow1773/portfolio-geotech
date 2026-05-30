@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import './menu.scss'
+import { useTranslation } from 'react-i18next'
 
 export interface MenuItem {
     key: string,
-    label: string,
     icone: string,
     url?: string,
     isSubMenu?: boolean,
@@ -17,12 +17,17 @@ interface MenuProps {
 
 export default function Menu({ items, menuKey }: MenuProps) {
     /**
-     * State para gerenciar a visibilidade dos submenus
+     * Controle de internacionalização.
+     */
+    const {t} = useTranslation()
+
+    /**
+     * State para gerenciar a visibilidade dos submenus.
      */
     const [showMenu, setShowMenu] = useState<{ [key: string]: boolean }>({})
 
     /**
-     * Efeito para inicializar o estado de visibilidade dos submenus
+     * Efeito para inicializar o estado de visibilidade dos submenus.
      */
     useEffect(() => {
         items.forEach(item => {
@@ -34,8 +39,8 @@ export default function Menu({ items, menuKey }: MenuProps) {
     }, [items])
 
     /**
-     * Função para lidar com o evento de mouse over em um item do menu
-     * @param item Item do menu que disparou o evento
+     * Função para lidar com o evento de mouse over em um item do menu.
+     * @param item Item do menu que disparou o evento.
      */
     const onMouseOver = (item: MenuItem) => {
         if (item.subMenu) {
@@ -54,9 +59,9 @@ export default function Menu({ items, menuKey }: MenuProps) {
                     className={item.key}
                     onMouseOver={() => onMouseOver(item)}
                 >
-                    <a href={item.url} aria-label={item.label}>
+                    <a href={item.url} aria-label={t(`menu.${item.key}`)}>
                         <i className={`bi bi-${item.icone}`}></i>
-                        <span>{item.label}</span>
+                        <span>{t(`menu.${item.key}`)}</span>
                     </a>
                     {item.subMenu && showMenu[item.key] && <Menu items={item.subMenu} menuKey={`submenu ${item.key}`}></Menu>}
                 </li>

@@ -1,0 +1,69 @@
+{
+    "titulo": "VHOP | 作品集",
+    "header": {
+        "baixar-cv": "下载 CV"
+    },
+    "menu": {
+        "inicio": "首页",
+        "sobre": "关于",
+        "xp": "经验",
+        "skills": "技能",
+        "contato": "联系"
+    },
+    "hero": {
+        "pre-text": "全栈开发者 | 地理学家",
+        "destaque": "地理和技术应用于<0>领土</0>分析。",
+        "subdestaque": "领土分析、环境和技术是我实践中的关键概念。与网络开发集成的地理处理。",
+        "titulo": "地理学硕士（UFPR）",
+        "projetos": "查看项目",
+        "legenda": "Victor Hugo 的肖像，地理学家和全栈开发者。"
+    },
+    "sobre": {
+        "titulo": "关于我",
+        "subtitulo": "从地理景观到代码：将地理学应用于技术。",
+        "texto": {
+            "p1": "我叫<0>Victor Hugo Oliveira de Paula</0>，是一名<1>地理学家</1>和<2>全栈开发工程师</2>，毕业于 UEL (State University of Londrina) 并获得 UFPR (Federal University of Paraná) 地理学硕士学位。",
+            "p2": "我的经验涵盖环境分析、总体规划与城市交通规划编制、咨询顾问工作，以及面向市政管理的 WebGIS 解决方案开发。",
+            "p3": "如今，我将地理信息处理工具（<0>QGIS</0>、<1>ArcGIS</1>）与开发技术（<2>Python</2>、<3>Java</3>、<4>PHP</4> 和 <5>JavaScript</5>）相结合，专长于前端框架（<6>React</6> 和 <7>Angular</7>）以及数据库技术，以打造基于地理空间的数据驱动型数字产品。"
+        },
+        "legendas": {
+            "l1": "开展环境分析实地调查工作。",
+            "l2": "使用地理信息处理和软件开发工具。"
+        }
+    },
+    "xp": {
+        "titulo": "职业履历",
+        "presente": "现在",
+        "xp1": {
+            "nome": "IPPUL - Instituto de Pesquisa e Planejamanto Urbano de Londrina (隆德里纳城市研究与规划研究所)",
+            "cargo": "实习生",
+            "descricao": "参与构建了隆德里纳市总体规划（2018-2028）特定法律的地理信息数据库。"
+        },
+        "xp2": {
+            "nome": "DRZ Consultoria e Tecnologia (咨询与技术公司)",
+            "cargo": "环境分析师",
+            "descricao": "负责用于开发城市总体规划的数据收集、系统化处理以及成果和报告的撰写。"
+        },
+        "xp3": {
+            "nome": "Maptriz Smart City",
+            "cargo": "全栈开发人员",
+            "descricao": "开发用于巴西城市管理和空间分析的 WebGIS 系统。"
+        }
+    },
+    "skills": {
+        "titulo": "技术技能",
+        "desenvolvimento": "开发",
+        "idiomas": {
+            "titulo": "语言",
+            "pt": "葡萄牙语（母语）",
+            "en": "英语",
+            "es": "西班牙语",
+            "zh": "普通话"
+        },
+        "geotecnologias": "地理技术"
+    },
+    "contato": {
+        "destaque": "让我们映射你的项目？",
+        "subdestaque": "联系我，这样我就可以与你的项目合作！"
+    }
+}

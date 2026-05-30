@@ -7,7 +7,7 @@ interface LevelBarProps {
     level: number,
 }
 
-export default function LevelBar(props: LevelBarProps) {
+export default function LevelBar({ind, nome, level}: LevelBarProps) {
     /**
      * Referência do elemento da barra de progresso.
      */
@@ -39,18 +39,18 @@ export default function LevelBar(props: LevelBarProps) {
     }, [temAnimacao])
 
     return (
-        <div className="bar-item" key={props.ind}>
+        <div className="bar-item" key={ind}>
             <div className="nome">
-                {props.nome}
+                {nome}
             </div>
             <div className="level">
-                {props.level} %
+                {level} %
             </div>
             <div className="progress">
                 <span
                     ref={barRef}
                     className={`filler ${temAnimacao ? 'visivel' : ''}`}
-                    style={{ ["--target-width" as string]: `${props.level}%` }}
+                    style={{ ["--target-width" as string]: `${level}%` }}
                 />
             </div>
         </div>

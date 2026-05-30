@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 import LevelBar from '../../../components/LevelBar/level-bar'
 import './skills.scss'
 
@@ -12,6 +14,11 @@ interface SkillList {
 }
 
 export default function Skills() {
+    /**
+     * Controle de internacionalização.
+     */
+    const { t } = useTranslation()
+
     /**
      * Lista de Skills de Desenvolvimento
      */
@@ -28,9 +35,10 @@ export default function Skills() {
      * Lista de Idiomas
      */
     const idiomaList: SkillItem[] = [
-        { nome: 'Português (nativo)', level: 100 },
-        { nome: 'Inglês', level: 90 },
-        { nome: 'Mandarim', level: 10 },
+        { nome: 'skills.idiomas.pt', level: 100 },
+        { nome: 'skills.idiomas.en', level: 90 },
+        { nome: 'skills.idiomas.es', level: 15 },
+        { nome: 'skills.idiomas.zh', level: 10 },
     ]
 
     /**
@@ -47,21 +55,21 @@ export default function Skills() {
      * Lista de todas as Skills
      */
     const skillList: SkillList[] = [
-        { nome: 'Desenvolvimento', skills: devList },
-        { nome: 'Idiomas', skills: idiomaList },
-        { nome: 'Geotecnologias', skills: geoList },
+        { nome: 'skills.desenvolvimento', skills: devList },
+        { nome: 'skills.idiomas.titulo', skills: idiomaList },
+        { nome: 'skills.geotecnologias', skills: geoList },
     ]
 
     return (
         <section id="skills">
             <div className="container">
-                <h1>Habilidades Técnicas</h1>
+                <h1>{t('skills.titulo')}</h1>
                 <div className="skill-items">
                     {skillList.map((item, index) => (
                         <div className="item" key={index}>
-                            <h2>{item.nome}</h2>
+                            <h2>{t(item.nome)}</h2>
                             {item.skills.map((skill, ind) => (
-                                <LevelBar key={ind} ind={ind} nome={skill.nome} level={skill.level} />
+                                <LevelBar key={ind} ind={ind} nome={t(skill.nome)} level={skill.level} />
                             ))}
                         </div>
                     ))}

@@ -1,11 +1,12 @@
 @use '/src/styles/global' as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 
 header {
     position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background: #121212b3;
+    background: rgba(18, 18, 18, 0.7);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid $dark-green;
     z-index: 999;
@@ -32,39 +33,94 @@ header {
             }
         }
 
-        button {
+        .traducao {
+            border: 1px solid $branco;
+            border-radius: 3rem;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            user-select: none;
+            font-family: "Noto Color Emoji", sans-serif;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            .current {
+                display: flex;
+                flex-direction: row;
+
+                span,
+                i {
+                    padding: 0 0.5rem;
+                }
+
+                i {
+                    border-left: 1px solid $branco;
+                }
+            }
+
+            .options {
+                display: none;
+                position: absolute;
+                top: calc(100% - 1rem);
+                flex-direction: column;
+                width: fit-content;
+                text-align: center;
+                background-color: rgba(18, 18, 18, 0.7);
+                overflow: hidden;
+                border-radius: 1rem;
+
+                &.on {
+                    display: flex;
+                }
+
+                span {
+                    padding: 0.5rem 1.25rem;
+
+                    &:hover {
+                        background-color: rgba(143, 143, 143, 0.2);
+                    }
+                }
+
+            }
+        }
+
+        .cv {
             background-color: $main;
             border: none;
             border-radius: 3rem;
             padding: 0.5rem 1.25rem;
             cursor: pointer;
-            box-shadow: #2bd68f67 1px 1px 20px;
+            box-shadow: rgba(43, 214, 143, 0.4) 1px 1px 20px;
             transition: box-shadow 0.2s ease;
+            font-size: 1rem;
+            font-family: inherit;
+            font-weight: 700;
+            text-transform: uppercase;
+            white-space: nowrap;
 
             a {
-                font-family: inherit;
-                font-size: 1rem;
-                font-weight: 700;
-                text-transform: uppercase;
-                white-space: nowrap;
                 color: #000;
                 text-decoration: none;
             }
 
             &:hover {
                 background-color: $secundary;
-                box-shadow: #2bd68f97 1px 1px 24px;
+                box-shadow: rgba(43, 214, 143, 0.6) 1px 1px 24px;
             }
         }
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     header {
         backdrop-filter: none;
     }
 
-    nav button {
-        font-size: 0.75rem !important;
+    nav {
+        padding: 0 1rem;
+
+        .cv {
+            font-size: 0.75rem;
+        }
     }
 }

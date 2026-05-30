@@ -1,12 +1,18 @@
+import { useTranslation } from 'react-i18next'
 import './contato.scss'
 
 export default function Contato() {
+    /**
+     * Controle de internacionalização.
+     */
+    const { t } = useTranslation()
+
     return (
         <section id="contato">
             <div className="container">
-                <h2>Vamos mapear seu próximo projeto?</h2>
+                <h2>{t('contato.destaque')}</h2>
                 <p>
-                    Entre contato para que eu possa colaborar com seu projeto!
+                    {t('contato.subdestaque')}
                 </p>
                 <div className="contatos">
                     <span className="botao">

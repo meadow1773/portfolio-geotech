@@ -1,7 +1,12 @@
 // import { useEffect, useState } from 'react'
+import { Trans, useTranslation } from 'react-i18next'
 import './hero.scss'
 
 export default function Hero() {
+    /**
+     * Controle de internacionalização.
+     */
+    const { t } = useTranslation()
     // const [texto, setTexto] = useState('')
     // const velocidadeTexto = 100
 
@@ -25,24 +30,28 @@ export default function Hero() {
             <div className="container">
                 <div className="hero-text">
                     <span className="pre-text">
-                        Desenvolvedor FullStack | Geógrafo
+                        {t('hero.pre-text')}
                     </span>
                     <h1>
-                        Geografia e tecnologia aplicada para análise do
-                        <span className="gradient"> território</span>.
+                        <Trans
+                            i18nKey="hero.destaque"
+                            components={[
+                                <span className="gradient" key="0" />
+                            ]}
+                        />
                     </h1>
                     <p>
-                        Análise territorial, meio ambiente e tecnologia são conceitos chaves da minha atuação. Geoprocessamento de forma integrada ao desenvolvimento web.
+                        {t('hero.subdestaque')}
                     </p>
                     {/* <button className="projects">
-                    Ver Projetos
-                </button> */}
+                        {t('hero.projetos')}
+                    </button> */}
                 </div>
                 <div className="foto">
                     <div className="place">
                         <img src="/images/fotos/1.webp" alt="Retrato de Victor Hugo, Geógrafo e Desenvolvedor Fullstack." />
                         <div className="titulo">
-                            <p>Mestre em Geografia (UFPR)</p>
+                            <p>{t('hero.titulo')}</p>
                         </div>
                     </div>
                     <div className="buttons">

@@ -1,0 +1,69 @@
+{
+    "titulo": "VHOP | Portafolio",
+    "header": {
+        "baixar-cv": "Descargar CV"
+    },
+    "menu": {
+        "inicio": "Inicio",
+        "sobre": "Sobre",
+        "xp": "Experiencia",
+        "skills": "Habilidades",
+        "contato": "Contacto"
+    },
+    "hero": {
+        "pre-text": "Programador Fullstack | Geógrafo",
+        "destaque": "Geografía y tecnología aplicada para análisis del <0>territorio</0>.",
+        "subdestaque": "Análisis territorial, medio ambiente y tecnología son conceptos claves de mi trabajo. Geoprocesamiento de forma integrada al desarrollo web.",
+        "titulo": "Máster en Geografía (UFPR)",
+        "projetos": "Ver Proyectos",
+        "legenda": "Retrato de Victor Hugo, Geógrafo y Programador Fullstack."
+    },
+    "sobre": {
+        "titulo": "Sobre mí",
+        "subtitulo": "Del paisaje al código: geografía aplicada a la tecnología.",
+        "texto": {
+            "p1": "Me llamo <0>Victor Hugo Oliveira de Paula</0>, <1>Geógrafo</1> y <2>Programador Full Stack</2>, graduado por la UEL (Universidad Estatal de Londrina) y con una maestría en Geografía por la UFPR (Universidad Federal del Paraná).",
+            "p2": "Mi experiencia abarca el análisis ambiental, la elaboración de planes directores y de movilidad urbana, el trabajo en consultorías y el desarrollo de soluciones WebGIS para la gestión municipal.",
+            "p3": "Actualmente combino herramientas de geoprocesamiento (<0>QGIS</0>, <1>ArcGIS</1>) con tecnologías de desarrollo (<2>Python</2>, <3>Java</3>, <4>PHP</4> y <5>JavaScript</5>), con especialización en frameworks front-end (<6>React</6> y <7>Angular</7>), así como en tecnologías de bases de datos, para crear productos digitales orientados por el espacio geográfico."
+        },
+        "legendas": {
+            "l1": "Trabajando en campo con análisis ambiental.",
+            "l2": "Utilizando software de geoprocesamiento y desarrollo."
+        }
+    },
+    "xp": {
+        "titulo": "Trayectoria Profesional",
+        "presente": "Presente",
+        "xp1": {
+            "nome": "IPPUL - Instituto de Pesquisa e Planejamanto Urbano de Londrina",
+            "cargo": "Pasante",
+            "descricao": "Participé en la construcción de la base de datos de información geográfica para las leyes específicas del Plan Director Municipal de Londrina (2018-2028)."
+        },
+        "xp2": {
+            "nome": "DRZ Consultoria e Tecnologia",
+            "cargo": "Analista Ambiental",
+            "descricao": "Recopilación, sistematización de datos y redacción de productos y informes para el desarrollo de Planes Directores Municipales."
+        },
+        "xp3": {
+            "nome": "Maptriz Smart City",
+            "cargo": "Programador Fullstack",
+            "descricao": "Desarrollo de sistema WebGIS para la gestión y análisis espacial de municipios brasileños."
+        }
+    },
+    "skills": {
+        "titulo": "Habilidades Técnicas",
+        "desenvolvimento": "Programación",
+        "idiomas": {
+            "titulo": "Idiomas",
+            "pt": "Portugués (Nativo)",
+            "en": "Inglés",
+            "es": "Español",
+            "zh": "Mandarín"
+        },
+        "geotecnologias": "Geotecnologías"
+    },
+    "contato": {
+        "destaque": "¿Vamos a mapear tu proyecto?",
+        "subdestaque": "¡Contáctame para que pueda colaborar con tu proyecto!"
+    }
+}

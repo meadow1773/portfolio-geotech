@@ -118,7 +118,7 @@
             .buttons {
                 display: flex;
                 gap: 1rem;
-                padding-bottom: 7px;
+                padding: 1rem 0;
 
                 a {
                     display: flex;
@@ -154,7 +154,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     #hero .container {
         padding-top: 2rem !important;
         grid-template-columns: 1fr !important;

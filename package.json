@@ -1,7 +1,7 @@
 {
   "name": "portfolio-geotech",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
@@ -11,8 +11,11 @@
     "deploy": "npm run build && firebase deploy"
   },
   "dependencies": {
+    "i18next": "^26.3.0",
+    "i18next-browser-languagedetector": "^8.2.1",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-i18next": "^17.0.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

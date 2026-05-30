@@ -7,11 +7,16 @@ import Footer from "../../components/Footer/footer"
 import Header from "../../components/Header/header"
 import './home.scss'
 
-export default function Home({ titulo }: { titulo: string }) {
+interface HomeProps {
+    titulo: string,
+    alterarIdioma: (idioma: string) => void
+}
+
+export default function Home({ titulo, alterarIdioma }: HomeProps) {
 
     return (
         <>
-            <Header titulo={titulo}></Header>
+            <Header titulo={titulo} alterarIdioma={alterarIdioma}></Header>
             <main>
                 <div className="green-glow"></div>
                 <Hero></Hero>
