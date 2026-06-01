@@ -71,28 +71,30 @@ export default function Header({ titulo, alterarIdioma }: HeaderProps) {
                     </a>
                 </span>
                 <Menu items={menuItems} menuKey="menu-principal"></Menu>
-                <div className="traducao">
-                    <div className="current" onClick={() => setFlagOpen(!flagOpen)}>
-                        <span>{`${flags[idioma]} ${idioma}`}</span>
-                        <i className="bi bi-chevron-down"></i>
+                <div className="menu-end">
+                    <div className="traducao">
+                        <div className="current" onClick={() => setFlagOpen(!flagOpen)}>
+                            <span>{`${flags[idioma]} ${idioma}`}</span>
+                            <i className="bi bi-chevron-down"></i>
+                        </div>
+                        <div className={"options " + (flagOpen ? 'on' : '')} >
+                            {Object.keys(flags).map(cod => (
+                                <span
+                                    key={cod}
+                                    className={cod}
+                                    onClick={() => handleChangeLanguage(cod)}
+                                >
+                                    {`${flags[cod]} ${cod}`}
+                                </span>
+                            ))}
+                        </div>
                     </div>
-                    <div className={"options " + (flagOpen ? 'on' : '')} >
-                        {Object.keys(flags).map(cod => (
-                            <span
-                                key={cod}
-                                className={cod}
-                                onClick={() => handleChangeLanguage(cod)}
-                            >
-                                {`${flags[cod]} ${cod}`}
-                            </span>
-                        ))}
-                    </div>
+                    <button className="cv">
+                        <a href="https://drive.google.com/file/d/16kvEzUNmbCo5psZucFMctOIcgsWA2_AY/view?usp=sharing" target="_blank">
+                            {t('header.baixar-cv')}
+                        </a>
+                    </button>
                 </div>
-                <button className="cv">
-                    <a href="https://drive.google.com/file/d/16kvEzUNmbCo5psZucFMctOIcgsWA2_AY/view?usp=sharing" target="_blank">
-                        {t('header.baixar-cv')}
-                    </a>
-                </button>
             </nav>
         </header>
     )

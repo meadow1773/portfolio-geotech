@@ -22,7 +22,7 @@
         .filler {
             display: block;
             border-radius: 10px;
-            background-image: linear-gradient(to right, #35f2a6, #3ae8c8);
+            background-image: linear-gradient(to right, $main, $secundary);
             background-clip: border-box;
             -webkit-text-fill-color: transparent;
             width: 0;

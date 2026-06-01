@@ -24,7 +24,6 @@ header {
             font-weight: 600;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            white-space: nowrap;
             user-select: none;
 
             a {
@@ -33,81 +32,86 @@ header {
             }
         }
 
-        .traducao {
-            border: 1px solid $branco;
-            border-radius: 3rem;
-            padding: 0.5rem 1rem;
-            margin: 0 0.5rem;
-            cursor: pointer;
-            user-select: none;
-            font-family: "Noto Color Emoji", sans-serif;
-            text-transform: uppercase;
-            white-space: nowrap;
+        .menu-end {
+            display: flex;
+            align-items: center;
 
-            .current {
-                display: flex;
-                flex-direction: row;
+            .traducao {
+                border: 1px solid $branco;
+                border-radius: 3rem;
+                padding: 0.5rem 1rem;
+                margin: 0 0.5rem;
+                cursor: pointer;
+                user-select: none;
+                font-family: "Noto Color Emoji", sans-serif;
+                text-transform: uppercase;
+                white-space: nowrap;
 
-                span,
-                i {
-                    padding: 0 0.5rem;
-                }
-
-                i {
-                    border-left: 1px solid $branco;
-                }
-            }
-
-            .options {
-                display: none;
-                position: absolute;
-                top: calc(100% - 1rem);
-                flex-direction: column;
-                width: fit-content;
-                text-align: center;
-                background-color: rgba(18, 18, 18, 0.7);
-                overflow: hidden;
-                border-radius: 1rem;
-
-                &.on {
+                .current {
                     display: flex;
-                }
+                    flex-direction: row;
 
-                span {
-                    padding: 0.5rem 1.25rem;
+                    span,
+                    i {
+                        padding: 0 0.5rem;
+                    }
 
-                    &:hover {
-                        background-color: rgba(143, 143, 143, 0.2);
+                    i {
+                        border-left: 1px solid $branco;
                     }
                 }
 
+                .options {
+                    display: none;
+                    position: absolute;
+                    top: calc(100% - 1rem);
+                    flex-direction: column;
+                    width: fit-content;
+                    text-align: center;
+                    background-color: rgba(18, 18, 18, 0.7);
+                    overflow: hidden;
+                    border-radius: 1rem;
+
+                    &.on {
+                        display: flex;
+                    }
+
+                    span {
+                        padding: 0.5rem 1.25rem;
+
+                        &:hover {
+                            background-color: rgba(143, 143, 143, 0.2);
+                        }
+                    }
+
+                }
+            }
+
+            .cv {
+                background-color: $main;
+                border: none;
+                border-radius: 3rem;
+                padding: 0.5rem 1.25rem;
+                cursor: pointer;
+                box-shadow: rgba(43, 214, 143, 0.4) 1px 1px 20px;
+                transition: box-shadow 0.2s ease;
+                font-size: 1rem;
+                font-family: inherit;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                a {
+                    color: #000;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    background-color: $secundary;
+                    box-shadow: rgba(43, 214, 143, 0.6) 1px 1px 24px;
+                }
             }
         }
 
-        .cv {
-            background-color: $main;
-            border: none;
-            border-radius: 3rem;
-            padding: 0.5rem 1.25rem;
-            cursor: pointer;
-            box-shadow: rgba(43, 214, 143, 0.4) 1px 1px 20px;
-            transition: box-shadow 0.2s ease;
-            font-size: 1rem;
-            font-family: inherit;
-            font-weight: 700;
-            text-transform: uppercase;
-            white-space: nowrap;
-
-            a {
-                color: #000;
-                text-decoration: none;
-            }
-
-            &:hover {
-                background-color: $secundary;
-                box-shadow: rgba(43, 214, 143, 0.6) 1px 1px 24px;
-            }
-        }
     }
 }
 
