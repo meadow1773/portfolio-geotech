@@ -47,6 +47,10 @@ header {
                 text-transform: uppercase;
                 white-space: nowrap;
 
+                &:hover {
+                    background-color: rgba(143, 143, 143, 0.2);
+                }
+
                 .current {
                     display: flex;
                     flex-direction: row;

@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
+import { Link } from "react-router-dom"
 
-import Menu, { type MenuItem } from "../Menu/menu"
+import Menu, { type MenuItem } from "./Menu/menu"
 
 import './header.scss'
 
@@ -19,7 +20,9 @@ export default function Header({ titulo, alterarIdioma }: HeaderProps) {
     /**
      * Recupera o idioma selecionado anteriormente do localStorage.
      */
-    const idiomaSelecionado = localStorage.getItem('i18nextLng')
+    const idiomaSelecionado = typeof localStorage === 'undefined'
+        ? null
+        : localStorage.getItem('i18nextLng')
 
     /**
      * Estado local para armazenar o idioma selecionado.
@@ -45,11 +48,12 @@ export default function Header({ titulo, alterarIdioma }: HeaderProps) {
      * Itens do menu principal.
      */
     const menuItems: MenuItem[] = [
-        { key: 'inicio', icone: 'house', url: '#' },
-        { key: 'sobre', icone: 'person', url: '#sobre' },
-        { key: 'xp', icone: 'suitcase-lg', url: '#xp' },
-        { key: 'skills', icone: 'layers', url: '#skills' },
-        { key: 'contato', icone: 'envelope', url: '#contato' },
+        { key: 'inicio', icone: 'house', url: '/' },
+        { key: 'galeria', icone: 'folder', url: '/galeria' },
+        { key: 'sobre', icone: 'person', url: '/#sobre' },
+        { key: 'xp', icone: 'suitcase-lg', url: '/#xp' },
+        { key: 'skills', icone: 'layers', url: '/#skills' },
+        { key: 'contato', icone: 'envelope', url: '/#contato' },
     ]
 
     /**
@@ -66,9 +70,9 @@ export default function Header({ titulo, alterarIdioma }: HeaderProps) {
         <header>
             <nav>
                 <span className="logo">
-                    <a href="#">
+                    <Link to={menuItems[0].url}>
                         {titulo}
-                    </a>
+                    </Link>
                 </span>
                 <Menu items={menuItems} menuKey="menu-principal"></Menu>
                 <div className="menu-end">
@@ -77,7 +81,7 @@ export default function Header({ titulo, alterarIdioma }: HeaderProps) {
                             <span>{`${flags[idioma]} ${idioma}`}</span>
                             <i className="bi bi-chevron-down"></i>
                         </div>
-                        <div className={"options " + (flagOpen ? 'on' : '')} >
+                        <div className={"options" + (flagOpen ? ' on' : '')} >
                             {Object.keys(flags).map(cod => (
                                 <span
                                     key={cod}

@@ -1,5 +1,5 @@
-// import { useEffect, useState } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import './hero.scss'
 
 export default function Hero() {
@@ -7,22 +7,6 @@ export default function Hero() {
      * Controle de internacionalização.
      */
     const { t } = useTranslation()
-    // const [texto, setTexto] = useState('')
-    // const velocidadeTexto = 100
-
-    // useEffect(() => {
-    //     let index = 0
-    //     setTexto('')
-
-    //     const idIntervalo = setInterval(() => {
-    //         setTexto((prev) => prev + texto.charAt(index))
-    //         index++
-
-    //         if (index >= texto.length) {
-    //             clearInterval(idIntervalo)
-    //         }
-    //     }, velocidadeTexto)
-    // }, [texto])
 
     return (
         <section id="hero">
@@ -43,9 +27,13 @@ export default function Hero() {
                     <p>
                         {t('hero.subdestaque')}
                     </p>
-                    {/* <button className="projects">
-                        {t('hero.projetos')}
-                    </button> */}
+                    <p className="botao">
+                        <Link to="/galeria" aria-label={t('menu.projetos')}>
+                            <button className="projects">
+                                {t('hero.projetos')}
+                            </button>
+                        </Link>
+                    </p>
                 </div>
                 <div className="foto">
                     <div className="place">
@@ -60,6 +48,9 @@ export default function Hero() {
                         </a>
                         <a href="https://linkedin.com/in/victor-hugo-oliveira-de-paula-22633a195" target="_blank">
                             <img src="/images/linkedin.svg" alt="" />
+                        </a>
+                        <a href="http://lattes.cnpq.br/2909948182276218" target="_blank">
+                            <img src="/images/lattes.svg" alt="" />
                         </a>
                     </div>
                 </div>

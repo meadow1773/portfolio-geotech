@@ -8,7 +8,8 @@
         "sobre": "About",
         "xp": "Experience",
         "skills": "Skills",
-        "contato": "Contact"
+        "contato": "Contact",
+        "galeria": "Gallery"
     },
     "hero": {
         "pre-text": "Fullstack Developer | Geographer",
@@ -65,5 +66,98 @@
     "contato": {
         "destaque": "Let's map your project?",
         "subdestaque": "Get in touch so I can collaborate with your project!"
+    },
+    "galeria": {
+        "titulo": "Project Gallery",
+        "grupo-projetos": {
+            "pd": "Municipal Master Plans",
+            "dev": "Web Development"
+        }
+    },
+    "projetos": {
+        "modal": {
+            "skills": "Skills used",
+            "repositorio": "Project Repository"
+        },
+        "skills": {
+            "qgis": "QGIS",
+            "arcgis": "ArcGIS",
+            "autocad": "AutoCAD",
+            "leaflet": "Leaflet",
+            "analise-ambiental": "Environmental Analysis",
+            "wordpress": "WordPress",
+            "php": "PHP",
+            "mysql": "MySQL",
+            "html-css": "HTML/CSS",
+            "javascript": "JavaScript",
+            "scss": "SCSS",
+            "angular": "Angular",
+            "postgres": "PostgreSQL",
+            "node": "Node.js",
+            "java": "Java",
+            "react-native": "React Native",
+            "geoserver": "GeoServer",
+            "react": "React",
+            "vite": "Vite",
+            "docker": "Docker"
+        },
+        "londrina": {
+            "titulo": "Municipal Master Plan of Londrina/PR (2018/2028): Specific Laws",
+            "subtitulo": "Intern at the Urban Research and Planning Management (IPPUL - Institute for Research and Urban Planning of Londrina)",
+            "descricao": "As an intern, I worked with geoprocessing and analysis of environmental and urban data. I developed and refined cartographic products that served as technical support to subsidize the revision of the Municipal Master Plan of Londrina."
+        },
+        "borda-mata": {
+            "titulo": "Municipal Master Plan of Borda da Mata/MG",
+            "subtitulo": "Environmental Analyst (DRZ Consulting and Geotechnology)"
+        },
+        "santa-helena": {
+            "titulo": "Municipal Master Plan of Santa Helena/PR",
+            "subtitulo": "Environmental Analyst (DRZ Consulting and Geotechnology)"
+        },
+        "marataizes": {
+            "titulo": "Municipal Master Plan of Marataízes/ES (2024/2034)",
+            "subtitulo": "Environmental Analyst (DRZ Consulting and Geotechnology)"
+        },
+        "general-carneiro": {
+            "titulo": "Municipal Master Plan of General Carneiro/PR",
+            "subtitulo": "Environmental Analyst (DRZ Consulting and Geotechnology)"
+        },
+        "general-carneiro-cmc": {
+            "titulo": "Municipal City Conference - General Carneiro/PR (2025)",
+            "subtitulo": "Environmental Analyst (DRZ Consulting and Geotechnology)"
+        },
+        "cambira": {
+            "titulo": "Municipal Master Plan of Cambira/PR",
+            "subtitulo": "Environmental Analyst (DRZ Consulting and Geotechnology)"
+        },
+        "pipoca": {
+            "titulo": "Pipoca Radioativa - Cinema from fan to fan!",
+            "subtitulo": "Developer, Editor, and Project Idealizer",
+            "descricao": "Created in 2014, Pipoca Radioativa, where I acted as idealizer, developer, and editor, was born with the purpose of producing content from fan to fan of cinema. The portal offered film reviews, exclusive interviews, and festival coverage, and had the support and production of dozens of writers. The project remained active until 2020 when, amidst its monetization planning, activities were impacted by the pandemic. Aligned with the technologies of the time, I developed the site in WordPress, with native customizations in PHP and pure CSS. A new version was started implementing responsive design and JavaScript."
+        },
+        "pop3": {
+            "titulo": "Portal Pop3 - Pop in its essence!",
+            "subtitulo": "Developer and Writer",
+            "descricao": "Active since 2022, Portal Pop3 is a project focused on promoting culture and art, with editorial axes dedicated to national and international music and audiovisual. I worked on the portal as a Developer and Writer, actively participating in the technical construction and content production. My involvement in the first version of the site ended in 2024, when the project was taken over by a new team. The portal was developed on the WordPress platform, using native customizations in pure PHP and JavaScript."
+        },
+        "finctrl": {
+            "titulo": "Finctrl - Finance App (in development)",
+            "subtitulo": "Personal project",
+            "descricao": "Developed in 2022 as a personal project, Finctrl is a web application for financial control. The project was born as a technical laboratory to consolidate good software development and architecture practices. In its first version, the application was built using PHP and TypeScript. Later, the system was rewritten with a reactive interface developed in Angular, and a backend built in Node.js/Express. The structure was organized through a Monorepo and packaged via Docker, ensuring a standardized development environment and ease of deployment."
+        },
+        "portfolio": {
+            "titulo": "VHOP | Portfolio",
+            "subtitulo": "Personal project",
+            "descricao": "Developed as my digital business card. The application was structured following a Data-driven approach, where the content and project information are managed through JSON notation. Built in React, using Vite as a build tool."
+        },
+        "sig-web": {
+            "titulo": "SIG-WEB",
+            "subtitulo": "Junior Fullstack Developer (Maptriz Smart City)",
+            "descricao": "SIG-WEB marked my first professional role as a Fullstack Developer. It is a large-scale and highly complex application: a WebGIS solution used daily by dozens of government clients across the country. In addition to the web ecosystem, I was directly involved in the development and maintenance of the mobile application that integrates the platform. A complex web interface built in Angular, as well as a backend based on Microservices using Spring Boot. A cross-platform application integrated into the ecosystem, developed in React Native."
+        },
+        "agudos-sul": {
+            "titulo": "Municipal Master Plan of Agudos do Sul/PR",
+            "subtitulo": "Environmental Analyst (DRZ Consulting and Geotechnology)"
+        }
     }
 }

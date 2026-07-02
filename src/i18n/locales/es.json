@@ -8,7 +8,8 @@
         "sobre": "Sobre",
         "xp": "Experiencia",
         "skills": "Habilidades",
-        "contato": "Contacto"
+        "contato": "Contacto",
+        "galeria": "Galería"
     },
     "hero": {
         "pre-text": "Programador Fullstack | Geógrafo",
@@ -65,5 +66,98 @@
     "contato": {
         "destaque": "¿Vamos a mapear tu proyecto?",
         "subdestaque": "¡Contáctame para que pueda colaborar con tu proyecto!"
+    },
+    "galeria": {
+        "titulo": "Galería de Proyectos",
+        "grupo-projetos": {
+            "pd": "Planes Directores Municipales",
+            "dev": "Desarrollo Web"
+        }
+    },
+    "projetos": {
+        "modal": {
+            "skills": "Habilidades utilizadas",
+            "repositorio": "Repositorio del Proyecto"
+        },
+        "skills": {
+            "qgis": "QGIS",
+            "arcgis": "ArcGIS",
+            "autocad": "AutoCAD",
+            "leaflet": "Leaflet",
+            "analise-ambiental": "Análisis Ambiental",
+            "wordpress": "WordPress",
+            "php": "PHP",
+            "mysql": "MySQL",
+            "html-css": "HTML/CSS",
+            "javascript": "JavaScript",
+            "scss": "SCSS",
+            "angular": "Angular",
+            "postgres": "PostgreSQL",
+            "node": "Node.js",
+            "java": "Java",
+            "react-native": "React Native",
+            "geoserver": "GeoServer",
+            "react": "React",
+            "vite": "Vite",
+            "docker": "Docker"
+        },
+        "londrina": {
+            "titulo": "Plan Director Municipal de Londrina/PR (2018/2028): Leyes Específicas",
+            "subtitulo": "Pasante en la Gerencia de Investigación y Planificación Urbana (IPPUL - Instituto de Pesquisa e Planejamento Urbano de Londrina)",
+            "descricao": "Como pasante, trabajé con geoprocesamiento y análisis de datos ambientales y urbanísticos. Elaboré y refiné productos cartográficos que sirvieron como soporte técnico para subsidiar la revisión del Plan Director Municipal de Londrina."
+        },
+        "borda-mata": {
+            "titulo": "Plan Director Municipal de Borda da Mata/MG",
+            "subtitulo": "Analista Ambiental (DRZ Consultoria e Geotecnologia)"
+        },
+        "santa-helena": {
+            "titulo": "Plan Director Municipal de Santa Helena/PR",
+            "subtitulo": "Analista Ambiental (DRZ Consultoria e Geotecnologia)"
+        },
+        "marataizes": {
+            "titulo": "Plan Director Municipal de Marataízes/ES (2024/2034)",
+            "subtitulo": "Analista Ambiental (DRZ Consultoria e Geotecnologia)"
+        },
+        "general-carneiro": {
+            "titulo": "Plan Director Municipal de General Carneiro/PR",
+            "subtitulo": "Analista Ambiental (DRZ Consultoria e Geotecnologia)"
+        },
+        "general-carneiro-cmc": {
+            "titulo": "Conferencia Municipal de la Ciudad - General Carneiro/PR (2025)",
+            "subtitulo": "Analista Ambiental (DRZ Consultoria e Geotecnologia)"
+        },
+        "cambira": {
+            "titulo": "Plan Director Municipal de Cambira/PR",
+            "subtitulo": "Analista Ambiental (DRZ Consultoria e Geotecnologia)"
+        },
+        "pipoca": {
+            "titulo": "Pipoca Radioativa - ¡Cine de fan para fan!",
+            "subtitulo": "Desarrollador, Editor e Idealizador del proyecto",
+            "descricao": "Creado en 2014, Pipoca Radioativa, donde actué como idealizador, desarrollador y editor, nació con el propósito de producir contenido de fan para fan de cine. El portal ofrecía críticas de películas, entrevistas exclusivas y coberturas de festivales, y contó con el apoyo y la producción de decenas de redactores. El proyecto se mantuvo activo hasta 2020 cuando, en medio de la planificación de su monetización, las actividades se vieron afectadas por la pandemia. Alineado con las tecnologías de la época, desarrollé el sitio en WordPress, con personalizaciones nativas en PHP y CSS puro. Se inició una nueva versión implementando diseño responsivo y JavaScript."
+        },
+        "pop3": {
+            "titulo": "Portal Pop3 - ¡Pop en su esencia!",
+            "subtitulo": "Desarrollador y Redactor",
+            "descricao": "En activo desde 2022, el Portal Pop3 es un proyecto enfocado en la promoción de la cultura y el arte, con ejes editoriales dedicados a la música y al audiovisual nacional e internacional. Trabajé en el portal como Desarrollador y Redactor, participando activamente en la construcción técnica y producción de contenido. Mi participación en la primera versión del sitio finalizó en 2024, cuando el proyecto fue asumido por un nuevo equipo. El portal fue desarrollado sobre la plataforma WordPress, utilizando personalizaciones nativas en PHP y JavaScript puro."
+        },
+        "finctrl": {
+            "titulo": "Finctrl - Aplicación de finanzas (en desarrollo)",
+            "subtitulo": "Proyecto personal",
+            "descricao": "Desarrollado en 2022 como un proyecto personal, Finctrl es una aplicación web para el control financiero. El proyecto nació como un laboratorio técnico para consolidar buenas prácticas de desarrollo de software y arquitectura. En su primera versión, la aplicación se construyó utilizando PHP y TypeScript. Posteriormente, el sistema fue reescrito con una interfaz reactiva desarrollada en Angular, y un backend construido en Node.js/Express. La estructura se organizó a través de un Monorepo y se empaquetó vía Docker, garantizando un entorno de desarrollo estandarizado y facilidad de despliegue."
+        },
+        "portfolio": {
+            "titulo": "VHOP | Portafolio",
+            "subtitulo": "Proyecto personal",
+            "descricao": "Desarrollado como mi tarjeta de visita digital. La aplicación se estructuró siguiendo un enfoque Data-driven, donde el contenido y la información de los proyectos se gestionan a través de notación JSON. Construido en React, utilizando Vite como herramienta de compilación."
+        },
+        "sig-web": {
+            "titulo": "SIG-WEB",
+            "subtitulo": "Desarrollador Fullstack Júnior (Maptriz Smart City)",
+            "descricao": "SIG-WEB marcó mi primer papel profesional como Desarrollador Fullstack. Es una aplicación a gran escala y de alta complejidad: una solución WebGIS utilizada diariamente por docenas de clientes gubernamentales en todo el país. Además del ecosistema web, estuve directamente involucrado en el desarrollo y mantenimiento de la aplicación móvil que integra la plataforma. Una interfaz web compleja construida en Angular, así como un backend basado en Microservicios utilizando Spring Boot. Una aplicación multiplataforma integrada en el ecosistema, desarrollada en React Native."
+        },
+        "agudos-sul": {
+            "titulo": "Plan Director Municipal de Agudos do Sul/PR",
+            "subtitulo": "Analista Ambiental (DRZ Consultoria e Geotecnologia)"
+        }
     }
 }

@@ -1,21 +1,23 @@
 {
   "name": "portfolio-geotech",
   "private": true,
-  "version": "1.1.1",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "rm -rf node_modules && npm i && npm run build && firebase deploy"
   },
   "dependencies": {
     "i18next": "^26.3.0",
     "i18next-browser-languagedetector": "^8.2.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-i18next": "^17.0.8"
+    "react-i18next": "^17.0.8",
+    "react-router-dom": "^7.16.0",
+    "vite-prerender-plugin": "^0.5.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

@@ -1,0 +1,43 @@
+@use '/src/styles/global' as *;
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.600);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: $dark;
+    border: 1px solid $cinza2;
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 100%;
+
+    &:hover {
+        background-color: $main;
+        color: #000;
+    }
+}

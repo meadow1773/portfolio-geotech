@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
-import './menu.scss'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
+import './menu.scss'
 
 export interface MenuItem {
     key: string,
     icone: string,
-    url?: string,
+    url: string,
     isSubMenu?: boolean,
     subMenu?: MenuItem[]
 }
@@ -19,7 +20,7 @@ export default function Menu({ items, menuKey }: MenuProps) {
     /**
      * Controle de internacionalização.
      */
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     /**
      * State para gerenciar a visibilidade dos submenus.
@@ -59,10 +60,17 @@ export default function Menu({ items, menuKey }: MenuProps) {
                     className={item.key}
                     onMouseOver={() => onMouseOver(item)}
                 >
-                    <a href={item.url} aria-label={t(`menu.${item.key}`)}>
+                    <Link to={item.url} aria-label={t(`menu.${item.key}`)}>
                         <i className={`bi bi-${item.icone}`}></i>
                         <span>{t(`menu.${item.key}`)}</span>
-                    </a>
+                    </Link>
+                    {/* {item.route ? (
+                    ) : (
+                        <a href={`/${item.url}`} aria-label={t(`menu.${item.key}`)}>
+                            <i className={`bi bi-${item.icone}`}></i>
+                            <span>{t(`menu.${item.key}`)}</span>
+                        </a>
+                    )} */}
                     {item.subMenu && showMenu[item.key] && <Menu items={item.subMenu} menuKey={`submenu ${item.key}`}></Menu>}
                 </li>
             ))}

@@ -8,7 +8,8 @@
         "sobre": "关于",
         "xp": "经验",
         "skills": "技能",
-        "contato": "联系"
+        "contato": "联系",
+        "galeria": "画廊"
     },
     "hero": {
         "pre-text": "全栈开发者 | 地理学家",
@@ -65,5 +66,98 @@
     "contato": {
         "destaque": "让我们映射你的项目？",
         "subdestaque": "联系我，这样我就可以与你的项目合作！"
+    },
+    "galeria": {
+        "titulo": "项目画廊",
+        "grupo-projetos": {
+            "pd": "市政总体规划",
+            "dev": "Web开发"
+        }
+    },
+    "projetos": {
+        "modal": {
+            "skills": "使用的技能",
+            "repositorio": "项目存储库"
+        },
+        "skills": {
+            "qgis": "QGIS",
+            "arcgis": "ArcGIS",
+            "autocad": "AutoCAD",
+            "leaflet": "Leaflet",
+            "analise-ambiental": "环境分析",
+            "wordpress": "WordPress",
+            "php": "PHP",
+            "mysql": "MySQL",
+            "html-css": "HTML/CSS",
+            "javascript": "JavaScript",
+            "scss": "SCSS",
+            "angular": "Angular",
+            "postgres": "PostgreSQL",
+            "node": "Node.js",
+            "java": "Java",
+            "react-native": "React Native",
+            "geoserver": "GeoServer",
+            "react": "React",
+            "vite": "Vite",
+            "docker": "Docker"
+        },
+        "londrina": {
+            "titulo": "隆德里纳/PR市总体规划（2018/2028）：具体法律",
+            "subtitulo": "城市研究与规划管理实习生 (IPPUL - 隆德里纳城市研究与规划研究所)",
+            "descricao": "作为实习生，我从事地理处理以及环境和城市数据的分析工作。我制作并完善了制图产品，为隆德里纳市总体规划的修订提供了技术支持。"
+        },
+        "borda-mata": {
+            "titulo": "博尔达-达马塔/MG市总体规划",
+            "subtitulo": "环境分析师 (DRZ咨询与地理技术公司)"
+        },
+        "santa-helena": {
+            "titulo": "圣赫勒拿/PR市总体规划",
+            "subtitulo": "环境分析师 (DRZ咨询与地理技术公司)"
+        },
+        "marataizes": {
+            "titulo": "马拉塔伊泽斯/ES市总体规划（2024/2034）",
+            "subtitulo": "环境分析师 (DRZ咨询与地理技术公司)"
+        },
+        "general-carneiro": {
+            "titulo": "卡内罗将军/PR市总体规划",
+            "subtitulo": "环境分析师 (DRZ咨询与地理技术公司)"
+        },
+        "general-carneiro-cmc": {
+            "titulo": "市城市会议 - 卡内罗将军/PR（2025）",
+            "subtitulo": "环境分析师 (DRZ咨询与地理技术公司)"
+        },
+        "cambira": {
+            "titulo": "坎比拉/PR市总体规划",
+            "subtitulo": "环境分析师 (DRZ咨询与地理技术公司)"
+        },
+        "pipoca": {
+            "titulo": "Pipoca Radioativa - 粉丝为粉丝制作的电影！",
+            "subtitulo": "开发者、编辑和项目构思者",
+            "descricao": "创建于2014年的Pipoca Radioativa，我作为其构思者、开发者和编辑，旨在为影迷制作内容。该门户网站提供影评、独家采访和电影节报道，并得到了数十位撰稿人的支持和制作。该项目一直活跃到2020年，当时在规划其商业化过程中，活动受到了疫情的影响。为了与当时的技术保持一致，我使用WordPress开发了该网站，并使用PHP和纯CSS进行了本地化定制。新版本已经开始实施响应式设计和JavaScript。"
+        },
+        "pop3": {
+            "titulo": "Portal Pop3 - 流行音乐的精髓！",
+            "subtitulo": "开发者和撰稿人",
+            "descricao": "自2022年开始运营的Portal Pop3是一个专注于推广文化和艺术的项目，其编辑重点是国内外音乐和视听内容。我作为开发者和撰稿人参与了该门户网站的技术建设和内容制作。我在该网站第一版本的工作于2024年结束，当时项目由一个新团队接管。该门户网站是在WordPress平台上开发的，使用了纯PHP和JavaScript的本地化定制。"
+        },
+        "finctrl": {
+            "titulo": "Finctrl - 财务应用（开发中）",
+            "subtitulo": "个人项目",
+            "descricao": "Finctrl是2022年开发的一个个人项目，是一个用于财务控制的网络应用程序。该项目作为一个技术实验室，旨在巩固良好的软件开发和架构实践。在第一个版本中，该应用程序使用PHP和TypeScript构建。后来，系统被重写，采用了Angular开发的响应式界面和Node.js/Express构建的后端。该结构通过Monorepo进行组织，并通过Docker打包，确保了标准化的开发环境和部署的便利性。"
+        },
+        "portfolio": {
+            "titulo": "VHOP | 作品集",
+            "subtitulo": "个人项目",
+            "descricao": "作为我的数字名片而开发。该应用程序采用数据驱动的方法构建，其中项目的内容和信息通过JSON表示法进行管理。使用React构建，并以Vite作为构建工具。"
+        },
+        "sig-web": {
+            "titulo": "SIG-WEB",
+            "subtitulo": "初级全栈开发人员 (Maptriz Smart City)",
+            "descricao": "SIG-WEB是我作为全栈开发人员的第一个专业角色。这是一个大规模且高度复杂的应用程序：一个WebGIS解决方案，每天被全国数十个政府客户使用。除了Web生态系统，我还直接参与了集成该平台的移动应用程序的开发和维护。这是一个用Angular构建的复杂Web界面，以及一个使用Spring Boot基于微服务的后端。一个集成到生态系统中的跨平台应用程序，用React Native开发。"
+        },
+        "agudos-sul": {
+            "titulo": "阿古多斯-杜苏尔/PR市总体规划",
+            "subtitulo": "环境分析师 (DRZ咨询与地理技术公司)"
+        }
     }
 }

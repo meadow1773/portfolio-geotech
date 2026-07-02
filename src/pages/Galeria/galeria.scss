@@ -1,0 +1,38 @@
+@use '/src/styles/global' as *;
+
+#projetos {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+
+    h1 {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .grupo {
+        h2 {
+            display: flex;
+            margin: 1.5rem 0;
+            gap: 1rem;
+
+            i {
+                color: $main;
+            }
+        }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 1rem;
+
+        &>p {
+            text-align: center;
+            font-size: 1.5rem;
+            color: $cinza1;
+            font-family: $fonte-mono;
+        }
+    }
+}
