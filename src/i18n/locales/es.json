@@ -9,14 +9,16 @@
         "xp": "Experiencia",
         "skills": "Habilidades",
         "contato": "Contacto",
-        "galeria": "Galería"
+        "galeria": "Galería",
+        "proj-dev": "Desarrollo",
+        "proj-pd": "Planes Directores"
     },
     "hero": {
         "pre-text": "Programador Fullstack | Geógrafo",
         "destaque": "Geografía y tecnología aplicada para análisis del <0>territorio</0>.",
         "subdestaque": "Análisis territorial, medio ambiente y tecnología son conceptos claves de mi trabajo. Geoprocesamiento de forma integrada al desarrollo web.",
         "titulo": "Máster en Geografía (UFPR)",
-        "projetos": "Ver Proyectos",
+        "projetos": "Ver Trabajos",
         "legenda": "Retrato de Victor Hugo, Geógrafo y Programador Fullstack."
     },
     "sobre": {
@@ -68,7 +70,7 @@
         "subdestaque": "¡Contáctame para que pueda colaborar con tu proyecto!"
     },
     "galeria": {
-        "titulo": "Galería de Proyectos",
+        "titulo": "Galería de Trabajos",
         "grupo-projetos": {
             "pd": "Planes Directores Municipales",
             "dev": "Desarrollo Web"
@@ -132,13 +134,13 @@
         },
         "pipoca": {
             "titulo": "Pipoca Radioativa - ¡Cine de fan para fan!",
-            "subtitulo": "Desarrollador, Editor e Idealizador del proyecto",
-            "descricao": "Creado en 2014, Pipoca Radioativa, donde actué como idealizador, desarrollador y editor, nació con el propósito de producir contenido de fan para fan de cine. El portal ofrecía críticas de películas, entrevistas exclusivas y coberturas de festivales, y contó con el apoyo y la producción de decenas de redactores. El proyecto se mantuvo activo hasta 2020 cuando, en medio de la planificación de su monetización, las actividades se vieron afectadas por la pandemia. Alineado con las tecnologías de la época, desarrollé el sitio en WordPress, con personalizaciones nativas en PHP y CSS puro. Se inició una nueva versión implementando diseño responsivo y JavaScript."
+            "subtitulo": "Programador, Editor e Idealizador del proyecto",
+            "descricao": "Creado en 2014, Pipoca Radioativa, donde actué como idealizador, programador y editor, nació con el propósito de producir contenido de fan para fan de cine. El portal ofrecía críticas de películas, entrevistas exclusivas y coberturas de festivales, y contó con el apoyo y la producción de decenas de redactores. El proyecto se mantuvo activo hasta 2020 cuando, en medio de la planificación de su monetización, las actividades se vieron afectadas por la pandemia. Alineado con las tecnologías de la época, desarrollé el sitio en WordPress, con personalizaciones nativas en PHP y CSS puro. Se inició una nueva versión implementando diseño responsivo y JavaScript."
         },
         "pop3": {
             "titulo": "Portal Pop3 - ¡Pop en su esencia!",
-            "subtitulo": "Desarrollador y Redactor",
-            "descricao": "En activo desde 2022, el Portal Pop3 es un proyecto enfocado en la promoción de la cultura y el arte, con ejes editoriales dedicados a la música y al audiovisual nacional e internacional. Trabajé en el portal como Desarrollador y Redactor, participando activamente en la construcción técnica y producción de contenido. Mi participación en la primera versión del sitio finalizó en 2024, cuando el proyecto fue asumido por un nuevo equipo. El portal fue desarrollado sobre la plataforma WordPress, utilizando personalizaciones nativas en PHP y JavaScript puro."
+            "subtitulo": "Programador y Redactor",
+            "descricao": "En activo desde 2022, el Portal Pop3 es un proyecto enfocado en la promoción de la cultura y el arte, con ejes editoriales dedicados a la música y al audiovisual nacional e internacional. Trabajé en el portal como Programador y Redactor, participando activamente en la construcción técnica y producción de contenido. Mi participación en la primera versión del sitio finalizó en 2024, cuando el proyecto fue asumido por un nuevo equipo. El portal fue desarrollado sobre la plataforma WordPress, utilizando personalizaciones nativas en PHP y JavaScript puro."
         },
         "finctrl": {
             "titulo": "Finctrl - Aplicación de finanzas (en desarrollo)",
@@ -152,8 +154,8 @@
         },
         "sig-web": {
             "titulo": "SIG-WEB",
-            "subtitulo": "Desarrollador Fullstack Júnior (Maptriz Smart City)",
-            "descricao": "SIG-WEB marcó mi primer papel profesional como Desarrollador Fullstack. Es una aplicación a gran escala y de alta complejidad: una solución WebGIS utilizada diariamente por docenas de clientes gubernamentales en todo el país. Además del ecosistema web, estuve directamente involucrado en el desarrollo y mantenimiento de la aplicación móvil que integra la plataforma. Una interfaz web compleja construida en Angular, así como un backend basado en Microservicios utilizando Spring Boot. Una aplicación multiplataforma integrada en el ecosistema, desarrollada en React Native."
+            "subtitulo": "Programador Fullstack Júnior (Maptriz Smart City)",
+            "descricao": "SIG-WEB marcó mi primer papel profesional como Programador Fullstack. Es una aplicación a gran escala y de alta complejidad: una solución WebGIS utilizada diariamente por docenas de clientes gubernamentales en todo el país. Además del ecosistema web, estuve directamente involucrado en el desarrollo y mantenimiento de la aplicación móvil que integra la plataforma. Una interfaz web compleja construida en Angular, así como un backend basado en Microservicios utilizando Spring Boot. Una aplicación multiplataforma integrada en el ecosistema, desarrollada en React Native."
         },
         "agudos-sul": {
             "titulo": "Plan Director Municipal de Agudos do Sul/PR",

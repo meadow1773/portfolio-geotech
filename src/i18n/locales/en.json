@@ -9,14 +9,16 @@
         "xp": "Experience",
         "skills": "Skills",
         "contato": "Contact",
-        "galeria": "Gallery"
+        "galeria": "Gallery",
+        "proj-dev": "Development",
+        "proj-pd": "Master Plans"
     },
     "hero": {
         "pre-text": "Fullstack Developer | Geographer",
         "destaque": "Geography and technology applied for <0>territory</0> analysis.",
         "subdestaque": "Territorial analysis, environment and technology are key concepts in my practice. Integrated geoprocessing with web development.",
         "titulo": "Master in Geography (UFPR)",
-        "projetos": "View Projects",
+        "projetos": "View Works",
         "legenda": "Portrait of Victor Hugo, Geographer and Fullstack Developer."
     },
     "sobre": {
@@ -68,7 +70,7 @@
         "subdestaque": "Get in touch so I can collaborate with your project!"
     },
     "galeria": {
-        "titulo": "Project Gallery",
+        "titulo": "Work Gallery",
         "grupo-projetos": {
             "pd": "Municipal Master Plans",
             "dev": "Web Development"

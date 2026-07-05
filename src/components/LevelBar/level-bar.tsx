@@ -7,13 +7,15 @@ interface LevelBarProps {
     level: number,
 }
 
-export default function LevelBar({ind, nome, level}: LevelBarProps) {
+export default function LevelBar({ ind, nome, level }: LevelBarProps) {
     /**
      * Referência do elemento da barra de progresso.
      */
     const barRef = useRef<HTMLDivElement | null>(null)
 
-    /** Estado que controla a animação. */
+    /** 
+     * Estado que controla a animação. 
+     */
     const [temAnimacao, setTemAnimacao] = useState(false)
 
     /**

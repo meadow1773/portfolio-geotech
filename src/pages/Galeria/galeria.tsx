@@ -7,6 +7,7 @@ import Projeto from './Projeto/projeto'
 
 interface GrupoProjetosItem {
     nomeGrupo: string,
+    id: string,
     projetos: ProjetoItem[]
 }
 
@@ -22,10 +23,12 @@ export default function Galeria() {
     const gruposProjetos: GrupoProjetosItem[] = [
         {
             nomeGrupo: 'galeria.grupo-projetos.dev',
+            id: 'dev',
             projetos: listaDev
         },
         {
             nomeGrupo: 'galeria.grupo-projetos.pd',
+            id: 'pd',
             projetos: listaPDM
         },
         // {
@@ -38,8 +41,8 @@ export default function Galeria() {
         <div id="projetos">
             <h1>{t('galeria.titulo')}</h1>
             {
-                gruposProjetos.map((grupo, idGrupo) => (
-                    <section className="grupo" key={idGrupo}>
+                gruposProjetos.map((grupo) => (
+                    <section className="grupo" id={grupo.id} key={grupo.id}>
                         <h2>
                             <i className="bi bi-geo-alt"></i>
                             {t(grupo.nomeGrupo)}

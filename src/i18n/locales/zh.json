@@ -9,14 +9,16 @@
         "xp": "经验",
         "skills": "技能",
         "contato": "联系",
-        "galeria": "画廊"
+        "galeria": "画廊",
+        "proj-dev": "开发",
+        "proj-pd": "总体规划"
     },
     "hero": {
         "pre-text": "全栈开发者 | 地理学家",
         "destaque": "地理和技术应用于<0>领土</0>分析。",
         "subdestaque": "领土分析、环境和技术是我实践中的关键概念。与网络开发集成的地理处理。",
         "titulo": "地理学硕士（UFPR）",
-        "projetos": "查看项目",
+        "projetos": "查看作品",
         "legenda": "Victor Hugo 的肖像，地理学家和全栈开发者。"
     },
     "sobre": {
@@ -68,7 +70,7 @@
         "subdestaque": "联系我，这样我就可以与你的项目合作！"
     },
     "galeria": {
-        "titulo": "项目画廊",
+        "titulo": "作品画廊",
         "grupo-projetos": {
             "pd": "市政总体规划",
             "dev": "Web开发"

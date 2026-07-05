@@ -43,7 +43,7 @@ export default function Menu({ items, menuKey }: MenuProps) {
      * Função para lidar com o evento de mouse over em um item do menu.
      * @param item Item do menu que disparou o evento.
      */
-    const onMouseOver = (item: MenuItem) => {
+    const handleMouseOver = (item: MenuItem) => {
         if (item.subMenu) {
             setShowMenu(prevState => ({
                 ...prevState,
@@ -53,24 +53,18 @@ export default function Menu({ items, menuKey }: MenuProps) {
     }
 
     return (
-        <ul className="menu" key={menuKey}>
+        <ul className={`menu ${menuKey}`} key={menuKey}>
             {items.map((item, index) => (
                 <li
                     key={index}
                     className={item.key}
-                    onMouseOver={() => onMouseOver(item)}
+                    onMouseEnter={() => handleMouseOver(item)}
+                    onMouseLeave={() => handleMouseOver(item)}
                 >
                     <Link to={item.url} aria-label={t(`menu.${item.key}`)}>
                         <i className={`bi bi-${item.icone}`}></i>
                         <span>{t(`menu.${item.key}`)}</span>
                     </Link>
-                    {/* {item.route ? (
-                    ) : (
-                        <a href={`/${item.url}`} aria-label={t(`menu.${item.key}`)}>
-                            <i className={`bi bi-${item.icone}`}></i>
-                            <span>{t(`menu.${item.key}`)}</span>
-                        </a>
-                    )} */}
                     {item.subMenu && showMenu[item.key] && <Menu items={item.subMenu} menuKey={`submenu ${item.key}`}></Menu>}
                 </li>
             ))}

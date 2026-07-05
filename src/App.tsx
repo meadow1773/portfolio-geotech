@@ -34,14 +34,14 @@ export default function App() {
         let pageTitleSuffix = ''
 
         switch (location.pathname) {
-            case '/':
-                pageTitleSuffix = t('menu.inicio')
-                break
-            case '/galeria':
-                pageTitleSuffix = t('menu.galeria')
-                break
-            default:
-                break
+        case '/':
+            pageTitleSuffix = t('menu.inicio')
+            break
+        case '/galeria':
+            pageTitleSuffix = t('menu.galeria')
+            break
+        default:
+            break
         }
         document.title = pageTitleSuffix ? `${baseTitle} - ${pageTitleSuffix}` : baseTitle
     }, [t, location.pathname])

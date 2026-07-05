@@ -9,14 +9,16 @@
         "xp": "Experiência",
         "skills": "Habilidades",
         "contato": "Contato",
-        "galeria": "Galeria"
+        "galeria": "Galeria",
+        "proj-dev": "Desenvolvimento",
+        "proj-pd": "Planos Diretores"
     },
     "hero": {
         "pre-text": "Desenvolvedor Fullstack | Geógrafo",
         "destaque": "Geografia e tecnologia aplicada para análise do <0>território</0>.",
         "subdestaque": "Análise territorial, meio ambiente e tecnologia são conceitos chaves da minha atuação. Geoprocessamento de forma integrada ao desenvolvimento web.",
         "titulo": "Mestre em Geografia (UFPR)",
-        "projetos": "Ver Projetos",
+        "projetos": "Ver Trabalhos",
         "legenda": "Retrato de Victor Hugo, Geógrafo e Desenvolvedor Fullstack."
     },
     "sobre": {
@@ -68,7 +70,7 @@
         "subdestaque": "Entre contato para que eu possa colaborar com seu projeto!"
     },
     "galeria": {
-        "titulo": "Galeria de Projetos",
+        "titulo": "Galeria de Trabalhos",
         "grupo-projetos": {
             "pd": "Planos Diretores Municipais",
             "dev": "Desenvolvimento Web"
