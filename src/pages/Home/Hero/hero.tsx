@@ -2,6 +2,9 @@ import { Trans, useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import './hero.scss'
 
+/**
+ * Componente da seção `Hero` da página `Home`.
+ */
 export default function Hero() {
     /**
      * Controle de internacionalização.
@@ -37,24 +40,24 @@ export default function Hero() {
                 </div>
                 <div className="foto">
                     <div className="place">
-                        <img src="/images/fotos/1.webp" alt="Retrato de Victor Hugo, Geógrafo e Desenvolvedor Fullstack." />
+                        <img src="/images/fotos/1.webp" alt={t('hero.img.retrato')} />
                         <div className="titulo">
                             <p>{t('hero.titulo')}</p>
                         </div>
                     </div>
                     <div className="buttons">
                         <a href="https://github.com/meadow1773" target="_blank">
-                            <img src="/images/github.svg" alt="" />
+                            <img src="/images/github.svg" alt={t('hero.img.github')} />
                         </a>
                         <a href="https://linkedin.com/in/victor-hugo-oliveira-de-paula-22633a195" target="_blank">
-                            <img src="/images/linkedin.svg" alt="" />
+                            <img src="/images/linkedin.svg" alt={t('hero.img.linkedin')} />
                         </a>
                         <a href="http://lattes.cnpq.br/2909948182276218" target="_blank">
-                            <img src="/images/lattes.svg" alt="" />
+                            <img src="/images/lattes.svg" alt={t('hero.img.lattes')} />
                         </a>
                     </div>
                 </div>
-                <img className="leaf" src="/images/leaf.svg" alt="" />
+                <img className="leaf" src="/images/leaf.svg" alt={t('hero.destaque')} />
             </div>
         </section>
     )

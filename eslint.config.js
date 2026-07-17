@@ -29,7 +29,7 @@ export default defineConfig([
         semi: ["error", "never"],
         indent: ["error", 4],
         'import/order': [
-            'error',
+            'warn',
             {
                 groups: ['builtin', 'external', 'internal'],
                 pathGroups: [

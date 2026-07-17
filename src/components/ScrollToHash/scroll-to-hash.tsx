@@ -1,6 +1,11 @@
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
 
+/**
+ * Componente funcional que lida com a rolagem suave para um hash específico na URL.
+ *
+ * @returns {null} Este componente não renderiza nada diretamente no DOM.
+ */
 export default function ScrollToHash() {
     /**
      * Recupera o hash da URL.

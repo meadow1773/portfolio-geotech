@@ -16,6 +16,12 @@ interface MenuProps {
     items: MenuItem[]
 }
 
+/**
+ * Componente funcional que renderiza um menu de navegação com suporte a submenus.
+ *
+ * @param {MenuProps} { items, menuKey } - As propriedades do componente, incluindo os itens do menu e a chave do menu.
+ * @returns {JSX.Element} Um elemento JSX que representa o menu de navegação.
+ */
 export default function Menu({ items, menuKey }: MenuProps) {
     /**
      * Controle de internacionalização.
@@ -65,7 +71,8 @@ export default function Menu({ items, menuKey }: MenuProps) {
                         <i className={`bi bi-${item.icone}`}></i>
                         <span>{t(`menu.${item.key}`)}</span>
                     </Link>
-                    {item.subMenu && showMenu[item.key] && <Menu items={item.subMenu} menuKey={`submenu ${item.key}`}></Menu>}
+                    {item.subMenu && showMenu[item.key] && 
+                        <Menu items={item.subMenu} menuKey={`submenu ${item.key}`} />}
                 </li>
             ))}
         </ul>

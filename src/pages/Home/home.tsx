@@ -5,6 +5,9 @@ import Skills from "./Skills/skills"
 import Sobre from "./Sobre/sobre"
 import './home.scss'
 
+/**
+ * Componente da página `Home`.
+ */
 export default function Home() {
     return (
         <>

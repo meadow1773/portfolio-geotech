@@ -1,6 +1,9 @@
 import './footer.scss'
 import packageJson from '../../../package.json'
 
+/**
+ * Componente de layout do rodapé da página.
+ */
 export default function Footer() {
     /**
      * Versão do projeto.

@@ -1,6 +1,9 @@
 import { useTranslation } from 'react-i18next'
 import './contato.scss'
 
+/**
+ * Componente da seção `Contato` da página `Home`.
+ */
 export default function Contato() {
     /**
      * Controle de internacionalização.
@@ -28,7 +31,7 @@ export default function Contato() {
                         </a>
                     </span>
                 </div>
-                <img className="globe" src="/images/globe.svg" alt="" />
+                <img className="globe" src="/images/globe.svg" alt={t('menu.contato')} />
             </div>
         </section>
     )

@@ -1,6 +1,9 @@
 import { Trans, useTranslation } from 'react-i18next'
 import './sobre.scss'
 
+/**
+ * Componente da seção `Sobre` da página `Home`.
+ */
 export default function Sobre() {
     /**
      * Controle de internacionalização.

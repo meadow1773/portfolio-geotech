@@ -61,9 +61,9 @@
     }
 }
 
-.proj-modal .modal-content {
+.proj-modal {
     padding: 0 !important;
-    max-width: 72vw;
+    max-width: 70vw !important;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
 
@@ -159,7 +159,7 @@
         display: block;
     }
 
-    .proj-modal .modal-content {
+    .proj-modal {
         grid-template-columns: 1fr;
     }
 }

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
 
-import Menu, { type MenuItem } from "./Menu/menu"
+import Menu, { type MenuItem } from "../../components/Menu/menu"
 
 import './header.scss'
 
@@ -11,6 +11,9 @@ interface HeaderProps {
     alterarIdioma: (idioma: string) => void
 }
 
+/**
+ * Componente de layout do cabeçalho da página.
+ */
 export default function Header({ titulo, alterarIdioma }: HeaderProps) {
     /**
      * Controle de internacionalização.
@@ -82,7 +85,7 @@ export default function Header({ titulo, alterarIdioma }: HeaderProps) {
                         {titulo}
                     </Link>
                 </span>
-                <Menu items={menuItems} menuKey="menu-principal"></Menu>
+                <Menu items={menuItems} menuKey="menu-principal" />
                 <div className="menu-end">
                     <div className="traducao">
                         <div className="current" onClick={() => setFlagOpen(!flagOpen)}>

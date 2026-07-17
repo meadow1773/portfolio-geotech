@@ -3,6 +3,9 @@
     "header": {
         "baixar-cv": "Download CV"
     },
+    "modal": {
+        "fechar": "Close"
+    },
     "menu": {
         "inicio": "Home",
         "sobre": "About",
@@ -18,8 +21,14 @@
         "destaque": "Geography and technology applied for <0>territory</0> analysis.",
         "subdestaque": "Territorial analysis, environment and technology are key concepts in my practice. Integrated geoprocessing with web development.",
         "titulo": "Master in Geography (UFPR)",
-        "projetos": "View Works",
-        "legenda": "Portrait of Victor Hugo, Geographer and Fullstack Developer."
+        "projetos": "View Works",        
+        "legenda": "Portrait of Victor Hugo, Geographer and Fullstack Developer.",
+        "img": {
+            "retrato": "Portrait of Victor Hugo, Geographer and Fullstack Developer.",
+            "gitub": "GitHub",
+            "linkedin": "LinkedIn",
+            "lattes": "Lattes"
+        }
     },
     "sobre": {
         "titulo": "About me",

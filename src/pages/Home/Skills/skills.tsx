@@ -13,6 +13,9 @@ interface SkillList {
     skills: SkillItem[]
 }
 
+/**
+ * Componente da seção `Skills` da página `Home`.
+ */
 export default function Skills() {
     /**
      * Controle de internacionalização.

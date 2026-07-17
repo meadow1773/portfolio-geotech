@@ -8,6 +8,11 @@ import Header from './layout/Header/header'
 import Galeria from './pages/Galeria/galeria'
 import Home from './pages/Home/home'
 
+/**
+ * Componente principal da aplicação.
+ *
+ * @returns {JSX.Element} O elemento JSX renderizado.
+ */
 export default function App() {
     /**
      * Controles de internacionalização.

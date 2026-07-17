@@ -7,6 +7,15 @@ interface LevelBarProps {
     level: number,
 }
 
+/**
+ * Componente funcional para renderizar uma barra de nível de Skills.
+ *
+ * @param {LevelBarProps} { ind, nome, level } - As propriedades do componente.
+ * @param {number} ind - O índice único para a chave do elemento.
+ * @param {string} nome - O nome da habilidade.
+ * @param {number} level - O nível da habilidade (0-100).
+ * @returns {JSX.Element} O elemento JSX renderizado.
+ */
 export default function LevelBar({ ind, nome, level }: LevelBarProps) {
     /**
      * Referência do elemento da barra de progresso.

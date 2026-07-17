@@ -9,6 +9,9 @@ interface xpItem {
     anoFim?: number,
 }
 
+/**
+ * Componente da seção `Experiência` da página `Home`.
+ */
 export default function Experiencia() {
     /**
      * Controle de internacionalização.

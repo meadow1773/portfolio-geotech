@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import './projeto.scss'
+import Image from '../../../components/Image/image'
 import Modal from '../../../components/Modal/modal'
 
 export interface ProjetoItem {
@@ -18,6 +19,11 @@ interface ProjetoProps {
     item: ProjetoItem
 }
 
+/**
+ * Componente da seção `Projeto` da página `Galeria`.
+ * 
+ * @param item Dados do projeto.
+ */
 export default function Projeto({ item }: ProjetoProps) {
     /**
      * Controle de abertura de modal de Projeto.
@@ -35,7 +41,7 @@ export default function Projeto({ item }: ProjetoProps) {
     const modal = (
         <Modal className="proj-modal" isOpen={openProj} onClose={() => setOpenProj(false)}>
             <div className="proj-img">
-                <img src={item.imgUrl} />
+                <Image src={item.imgUrl} alt={t(`${item.prefix}.${item.label}`)} />
             </div>
             <div className="proj-content">
                 <span className="sub">{t(`${item.prefix}.${item.subtitulo}`)}</span>
@@ -70,7 +76,7 @@ export default function Projeto({ item }: ProjetoProps) {
                 <span className="expand">
                     <i className="bi bi-arrows-angle-expand"></i>
                 </span>
-                <img src={item.imgUrl} />
+                <img src={item.imgUrl} alt={t(`${item.prefix}.${item.label}`)} />
             </div>
             <div className="proj-content">
                 <h3>{t(`${item.prefix}.${item.label}`)}</h3>
