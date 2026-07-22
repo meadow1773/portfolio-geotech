@@ -19,8 +19,12 @@ const rotasPrerenderizadas = new Set([
  * @returns Promise<PrerenderResult>
  */
 export async function prerender({ url }: PrerenderArguments): Promise<PrerenderResult> {
+    // Define o idioma para português antes de renderizar o componente.
     await i18n.changeLanguage('pt')
 
+    /**
+     * Renderiza o componente App dentro de um MemoryRouter.
+     */
     const html = renderToString(
         <MemoryRouter initialEntries={[url]}>
             <App />

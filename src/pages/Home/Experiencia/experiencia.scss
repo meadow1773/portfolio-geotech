@@ -72,14 +72,14 @@
 
 @keyframes glowBlink {
     0% {
-        box-shadow: 0 0 16px rgba(53, 242, 164, 0.45);
+        box-shadow: 0 0 16px #35f2a473;
     }
 
     50% {
-        box-shadow: 0 0 32px rgba(82, 242, 175, 0.9);
+        box-shadow: 0 0 32px #52f2afe6;
     }
 
     100% {
-        box-shadow: 0 0 16px rgba(53, 242, 164, 0.45);
+        box-shadow: 0 0 16px #35f2a473;
     }
 }

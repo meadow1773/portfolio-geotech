@@ -6,7 +6,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.600);
+    background-color: #00000099;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
     max-width: 95vw;
     max-height: 90vh;
     overflow-y: auto;
-    
+
     .modal-close {
         position: absolute;
         top: 1rem;
@@ -34,7 +34,8 @@
         cursor: pointer;
         padding: 0.5rem;
         border-radius: 100%;
-    
+        user-select: none;
+
         &:hover {
             background-color: $main;
             color: #000;

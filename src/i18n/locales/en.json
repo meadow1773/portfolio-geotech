@@ -14,14 +14,15 @@
         "contato": "Contact",
         "galeria": "Gallery",
         "proj-dev": "Development",
-        "proj-pd": "Master Plans"
+        "proj-pd": "Master Plans",
+        "proj-mapas": "Cartographic Products"
     },
     "hero": {
         "pre-text": "Fullstack Developer | Geographer",
         "destaque": "Geography and technology applied for <0>territory</0> analysis.",
         "subdestaque": "Territorial analysis, environment and technology are key concepts in my practice. Integrated geoprocessing with web development.",
         "titulo": "Master in Geography (UFPR)",
-        "projetos": "View Works",        
+        "projetos": "View Works",
         "legenda": "Portrait of Victor Hugo, Geographer and Fullstack Developer.",
         "img": {
             "retrato": "Portrait of Victor Hugo, Geographer and Fullstack Developer.",
@@ -82,7 +83,8 @@
         "titulo": "Work Gallery",
         "grupo-projetos": {
             "pd": "Municipal Master Plans",
-            "dev": "Web Development"
+            "dev": "Web Development",
+            "mapas": "Cartographic Products"
         }
     },
     "projetos": {
@@ -112,6 +114,9 @@
             "vite": "Vite",
             "docker": "Docker"
         },
+        "mapas": {
+            "titulo": "Cartographic Products"
+        },
         "londrina": {
             "titulo": "Municipal Master Plan of Londrina/PR (2018/2028): Specific Laws",
             "subtitulo": "Intern at the Urban Research and Planning Management (IPPUL - Institute for Research and Urban Planning of Londrina)",
@@ -126,7 +131,7 @@
             "subtitulo": "Environmental Analyst (DRZ Consulting and Geotechnology)"
         },
         "marataizes": {
-            "titulo": "Municipal Master Plan of Marataízes/ES (2024/2034)",
+            "titulo": "Municipal Master Plan of Marataízes/ES",
             "subtitulo": "Environmental Analyst (DRZ Consulting and Geotechnology)"
         },
         "general-carneiro": {

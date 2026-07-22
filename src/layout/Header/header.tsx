@@ -51,8 +51,9 @@ export default function Header({ titulo, alterarIdioma }: HeaderProps) {
      * Submenu para a galeria.
      */
     const galeriaSubMenu: MenuItem[] = [
-        {key: 'proj-dev', icone: '', url: '/galeria#dev', isSubMenu: true},
-        {key: 'proj-pd', icone: '', url: '/galeria#pd', isSubMenu: true},
+        { key: 'proj-dev', icone: '', url: '/galeria#dev', isSubMenu: true },
+        { key: 'proj-pd', icone: '', url: '/galeria#pd', isSubMenu: true },
+        { key: 'proj-mapas', icone: '', url: '/galeria#mapas', isSubMenu: true },
     ]
 
     /**

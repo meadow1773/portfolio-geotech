@@ -72,16 +72,21 @@ export default function Projeto({ item }: ProjetoProps) {
 
     return (
         <article>
-            <div className="proj-capa" onClick={() => setOpenProj(true)}>
+            <div className="proj-capa" onClick={() => (item.prefix != 'projetos.mapas') && setOpenProj(true)}>
                 <span className="expand">
                     <i className="bi bi-arrows-angle-expand"></i>
                 </span>
-                <img src={item.imgUrl} alt={t(`${item.prefix}.${item.label}`)} />
+                {(item.prefix != 'projetos.mapas') ?
+                    <img src={item.imgUrl} alt={t(`${item.prefix}.${item.label}`)} /> :
+                    <Image src={item.imgUrl} alt={t(`${item.prefix}.${item.label}`)} />
+                }
             </div>
-            <div className="proj-content">
-                <h3>{t(`${item.prefix}.${item.label}`)}</h3>
-                <p>{t(`${item.prefix}.${item.subtitulo}`)}</p>
-            </div>
+            {(item.prefix != 'projetos.mapas') &&
+                <div className="proj-content">
+                    <h3>{t(`${item.prefix}.${item.label}`)}</h3>
+                    <p>{t(`${item.prefix}.${item.subtitulo}`)}</p>
+                </div>
+            }
             {modal}
         </article>
     )

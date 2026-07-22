@@ -116,4 +116,89 @@ export const listaDev: ProjetoItem[] = [
 /**
  * Lista de Produtos Cartográficos.
  */
-export const listaMapas: ProjetoItem[] = []
+export const listaMapas: ProjetoItem[] = [
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/lab-clima1.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/lab-clima2.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/biogeo.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/ippul1.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/tcc.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/drz1.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/drz2.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/borda-mata1.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/borda-mata2.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/general-carneiro1.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/general-carneiro2.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/general-carneiro3.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/marataizes1.png',
+        subtitulo: ''
+    },
+    {
+        prefix: 'projetos.mapas',
+        label: 'titulo',
+        imgUrl: '/images/projetos/mapas/marataizes2.png',
+        subtitulo: ''
+    },
+]

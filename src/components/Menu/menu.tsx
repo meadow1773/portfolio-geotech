@@ -46,15 +46,25 @@ export default function Menu({ items, menuKey }: MenuProps) {
     }, [items])
 
     /**
-     * Função para lidar com o evento de mouse over em um item do menu.
+     * Mostra o submenu quando o mouse entra no item do menu.
      * @param item Item do menu que disparou o evento.
      */
-    const handleMouseOver = (item: MenuItem) => {
+    const handleMouseEnter = (item: MenuItem) => {
         if (item.subMenu) {
             setShowMenu(prevState => ({
                 ...prevState,
-                [item.key]: !prevState[item.key]
+                [item.key]: true
             }))
+        }
+    }
+
+    /**
+     * Esconde o submenu quando o mouse sai do item do menu.
+     * @param item Item do menu que disparou o evento.
+     */
+    const handleMouseLeave = (item: MenuItem) => {
+        if (item.subMenu) {
+            setShowMenu(prevState => ({ ...prevState, [item.key]: false }))
         }
     }
 
@@ -63,16 +73,17 @@ export default function Menu({ items, menuKey }: MenuProps) {
             {items.map((item, index) => (
                 <li
                     key={index}
-                    className={item.key}
-                    onMouseEnter={() => handleMouseOver(item)}
-                    onMouseLeave={() => handleMouseOver(item)}
+                    className={`${item.key} ${item.subMenu && showMenu[item.key] ? 'submenu-aberto' : ''}`}
+                    onMouseEnter={() => handleMouseEnter(item)}
+                    onMouseLeave={() => handleMouseLeave(item)}
                 >
                     <Link to={item.url} aria-label={t(`menu.${item.key}`)}>
                         <i className={`bi bi-${item.icone}`}></i>
                         <span>{t(`menu.${item.key}`)}</span>
                     </Link>
-                    {item.subMenu && showMenu[item.key] && 
-                        <Menu items={item.subMenu} menuKey={`submenu ${item.key}`} />}
+                    {item.subMenu && showMenu[item.key] &&
+                        <Menu items={item.subMenu} menuKey={`submenu ${item.key}`} />
+                    }
                 </li>
             ))}
         </ul>

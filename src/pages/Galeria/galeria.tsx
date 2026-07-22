@@ -4,7 +4,6 @@ import './galeria.scss'
 import { listaPDM, listaDev, listaMapas } from './lista-projetos'
 import type { ProjetoItem } from './Projeto/projeto'
 import Projeto from './Projeto/projeto'
-import Image from '../../components/Image/image'
 
 interface GrupoProjetosItem {
     nomeGrupo: string,
@@ -31,15 +30,15 @@ export default function Galeria() {
             projetos: listaDev
         },
         {
+            nomeGrupo: 'galeria.grupo-projetos.mapas',
+            id: 'mapas',
+            projetos: listaMapas
+        },
+        {
             nomeGrupo: 'galeria.grupo-projetos.pd',
             id: 'pd',
             projetos: listaPDM
         },
-        {
-            nomeGrupo: 'galeria.grupo-projetos.mapas',
-            id: 'mapas',
-            projetos: listaMapas
-        }
     ]
 
     return (
@@ -54,9 +53,7 @@ export default function Galeria() {
                     </h2>
                     <div className="container">
                         {grupo.projetos.map((proj, idProj) => (
-                            grupo.id === 'mapas' ?
-                                <Image src={proj.imgUrl} alt={t(`${proj.prefix}.${proj.label}`)} key={idProj}/> :
-                                <Projeto item={proj} key={idProj} />
+                            <Projeto item={proj} key={idProj} />
                         ))}
                     </div>
                 </section>

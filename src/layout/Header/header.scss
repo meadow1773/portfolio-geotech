@@ -49,7 +49,7 @@ nav {
             white-space: nowrap;
 
             &:hover {
-                background-color: rgba(143, 143, 143, 0.2);
+                background-color: #8f8f8f33;
             }
 
             .current {
@@ -85,7 +85,7 @@ nav {
                     padding: 0.5rem 1.25rem;
 
                     &:hover {
-                        background-color: rgba(143, 143, 143, 0.2);
+                        background-color: #8f8f8f33;
                     }
                 }
 
@@ -98,7 +98,7 @@ nav {
             border-radius: 3rem;
             padding: 0.5rem 1.25rem;
             cursor: pointer;
-            box-shadow: rgba(43, 214, 143, 0.4) 1px 1px 20px;
+            box-shadow: #2bd68f66 1px 1px 20px;
             transition: box-shadow 0.2s ease;
             font-size: 1rem;
             font-family: inherit;
@@ -112,7 +112,7 @@ nav {
 
             &:hover {
                 background-color: $secundary;
-                box-shadow: rgba(43, 214, 143, 0.6) 1px 1px 24px;
+                box-shadow: #2bd68f99 1px 1px 24px;
             }
         }
     }

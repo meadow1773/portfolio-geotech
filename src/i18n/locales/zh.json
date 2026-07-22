@@ -14,14 +14,15 @@
         "contato": "联系",
         "galeria": "画廊",
         "proj-dev": "开发",
-        "proj-pd": "总体规划"
+        "proj-pd": "总体规划",
+        "proj-mapas": "制图产品"
     },
     "hero": {
         "pre-text": "全栈开发者 | 地理学家",
         "destaque": "地理和技术应用于<0>领土</0>分析。",
         "subdestaque": "领土分析、环境和技术是我实践中的关键概念。与网络开发集成的地理处理。",
         "titulo": "地理学硕士（UFPR）",
-        "projetos": "查看作品",        
+        "projetos": "查看作品",
         "legenda": "Victor Hugo 的肖像，地理学家和全栈开发者。",
         "img": {
             "retrato": "Victor Hugo 的肖像，地理学家和全栈开发者。",
@@ -82,7 +83,8 @@
         "titulo": "作品画廊",
         "grupo-projetos": {
             "pd": "市政总体规划",
-            "dev": "Web开发"
+            "dev": "Web开发",
+            "mapas": "制图产品"
         }
     },
     "projetos": {
@@ -112,6 +114,9 @@
             "vite": "Vite",
             "docker": "Docker"
         },
+        "mapas": {
+            "titulo": "制图产品"
+        },
         "londrina": {
             "titulo": "隆德里纳/PR市总体规划（2018/2028）：具体法律",
             "subtitulo": "城市研究与规划管理实习生 (IPPUL - 隆德里纳城市研究与规划研究所)",
@@ -126,7 +131,7 @@
             "subtitulo": "环境分析师 (DRZ咨询与地理技术公司)"
         },
         "marataizes": {
-            "titulo": "马拉塔伊泽斯/ES市总体规划（2024/2034）",
+            "titulo": "马拉塔伊泽斯/ES市总体规划",
             "subtitulo": "环境分析师 (DRZ咨询与地理技术公司)"
         },
         "general-carneiro": {

@@ -14,7 +14,8 @@
         "contato": "Contato",
         "galeria": "Galeria",
         "proj-dev": "Desenvolvimento",
-        "proj-pd": "Planos Diretores"
+        "proj-pd": "Planos Diretores",
+        "proj-mapas": "Produtos Cartográficos"
     },
     "hero": {
         "pre-text": "Desenvolvedor Fullstack | Geógrafo",
@@ -82,7 +83,8 @@
         "titulo": "Galeria de Trabalhos",
         "grupo-projetos": {
             "pd": "Planos Diretores Municipais",
-            "dev": "Desenvolvimento Web"
+            "dev": "Desenvolvimento Web",
+            "mapas": "Produtos Cartográficos"
         }
     },
     "projetos": {
@@ -111,6 +113,9 @@
             "react": "React",
             "vite": "Vite",
             "docker": "Docker"
+        },
+        "mapas": {
+            "titulo": "Produtos Cartográficos"
         },
         "londrina": {
             "titulo": "Plano Diretor Muncipal de Londrina/PR (2018/2028): Leis Específicas",

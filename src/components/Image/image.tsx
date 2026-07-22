@@ -20,7 +20,7 @@ export interface ImageProps {
  * @param {string} [sizes] - Atributo 'sizes' para a imagem.
  * @returns {JSX.Element} O elemento JSX renderizado.
  */
-export default function Image({src, className, alt, sizes}: ImageProps) {
+export default function Image({ src, className, alt, sizes }: ImageProps) {
     /**
      * Controle de abertura de modal de Imagem.
      */
@@ -37,12 +37,12 @@ export default function Image({src, className, alt, sizes}: ImageProps) {
 
     return (
         <>
-            <img 
-                src={src} 
-                alt={alt} 
-                className={`img-container ${className}`} 
-                sizes={sizes} 
-                onClick={() => setOpenImg(true)} 
+            <img
+                src={src}
+                alt={alt}
+                className={'img-container' + (className ? ` ${className}` : '')}
+                sizes={sizes}
+                onClick={() => setOpenImg(true)}
             />
             {modal}
         </>
